@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Charter";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Charter/charter_regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Charter";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/Charter/charter_italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Charter";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Charter/charter_bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Charter";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/Charter/charter_bold_italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.ttf") format("truetype");
+  font-display: swap;
+}
+.columns-12 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.columns-10 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.columns-8 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.columns-6 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.columns-5 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.columns-4 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columns-3 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.columns-2 {
+  display: grid;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 992px) {
+  .columns-12 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .columns-10 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .columns-8 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .columns-6 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .columns-5 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 769px) {
+  .columns-12 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .columns-2 {
+    display: grid;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=clarity.css.map */

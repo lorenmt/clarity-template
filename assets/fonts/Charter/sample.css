@@ -1,0 +1,31 @@
+@font-face {
+font-family: charter;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+src: url('charter_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: charter;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+src: url('charter_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: charter;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+src: url('charter_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: charter;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+src: url('charter_bold_italic.woff2') format('woff2');
+}

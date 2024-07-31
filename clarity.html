@@ -1,0 +1,573 @@
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity: A Minimalist Website Template for AI Research</title>
+    <meta name="description" content="We've presented Clarity, a minimalist and elegant website template for AI research.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="Shikun Liu, AI Research and Design" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="https://shikun.io/projects/clarity" property="og:url">
+    <meta content="Clarity" property="og:title">
+    <meta content="Website Template for AI Research" property="og:description">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@liu_shikun">
+    <meta name="twitter:description" content="Clarity: A Minimalist Website Template for AI Research">
+    <meta name="twitter:image:src" content="assets/figures/clarity.png">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Title Page -->
+    <!-- Dark Theme Example -->
+    <!-- <div class="container blog" id="first-content" style="background-color: #092535;">
+        <div class="blog-title white"> -->
+    <div class="container blog" id="first-content" style="background-color: #E0E4E6;">
+        <div class="blog-title">
+            <div class="blog-intro">
+                <div>
+                    <h1 class="title">Clarity: A Minimalist Website Template for AI Research</h1>
+                    <p class="author">by Shikun Liu</p>
+                    <p class="abstract">
+                        Welcome to Clarity — an open-source, minimalist website template designed for presenting AI research. Originally developed as the foundation for my personal website, Clarity offers a modular, clean design that is easy to customise for simple, project-based website creation. With Clarity, you can effectively showcase your work, ensuring your research stands out in a visually appealing and professional manner. 
+                    </p>
+                   
+                </div>
+               
+                <div class="info">
+                        <a href="https://github.com/lorenmt/clarity-template" class="button icon" style="background-color: rgba(255, 255, 255, 0.25)">Source Code <i class="fa-solid fa-code"></i></a>  &nbsp;&nbsp; 
+                </div>
+            </div>
+
+            <div class="blog-cover">
+                <img class="foreground" src="assets/figures/clarity.png">
+                <img class="background" src="assets/figures/clarity.png">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container blog main first" id="blog-main">
+        <h1 >
+            Introduction
+        </h1>
+        <p class='text'>
+            Clarity merges designs I've developed over the years for my prior AI research projects. By open-sourcing this template, I hope to benefit the AI and broader science community, by providing a clean and hackable website solution to better present and visualise research. 
+        </p>
+
+        <p class="text">
+            In today's AI research landscape, particularly with the rise of generative AI, it's increasingly beneficial for AI researchers to include interactive blog posts alongside research publications. Additional media materials and online demos, popularised by <a href="https://github.com/gradio-app/awesome-demos">Gradio Demos</a>, can make research more accessible and engaging to a broader audience. While large corporations can easily leverage teams of graphic designers and writers to polish their design and writing, Ph.D. students and independent AI researchers often lack the time and resources to do so. Clarity bridges this gap by offering an aesthetically pleasing, easy-to-navigate template for presenting AI research, simplifying the process of creating visually appealing technical blog posts.
+        </p>
+
+        <p class="text">
+            The inspiration for Clarity also comes from many AI pioneers who have written clear and interactive blog posts that have significantly helped me study new machine learning research and insights. I'd like to extend my deepest gratitude to <a href="https://otoro.net/ml/">David Ha</a>, <a href="https://colah.github.io/about.html">Chris Olah</a> (as well as his great contribution to <a href="https://distill.pub/">Distill Pub</a> and <a href="https://transformer-circuits.pub/">Transformer Circuits</a>), <a href="https://lilianweng.github.io/">Lilian Weng</a>, <a href="https://www.inference.vc/about/">Ferenc Huszár</a>, and <a href="https://karpathy.github.io/">Andrej Karpathy</a>. Their work has demonstrated the power of clear, accessible communication in AI research, and Clarity aims to continue this tradition, fostering a community where <em> knowledge can be shared easily, freely and beautifully.</em>
+        </p>
+
+        <p class="text">
+            Within this template, I will also introduce some design guidelines and tips, complemented by visual examples from my own projects and those I admire. These guidelines will help you create a polished and professional presentation for your research, ensuring your findings are communicated as effectively as possible.
+        </p>
+    </div>
+
+
+    <div class="container blog main">
+        <h1 >
+            Containers and Visual Diagrams
+        </h1>
+
+        <p class="text">
+            Most AI projects incorporate visual diagrams to effectively communicate complex concepts. These diagrams often highlight new neural architecture designs and ML training pipelines, which are central to the project's contributions and research highlights. Clear and well-designed diagrams can significantly enhance the reader's understanding and engagement with the research. In Clarity, texts and visual diagrams are wrapped within a div container to maintain consistent design layouts.
+        </p>      
+        
+        <p class="text">
+            Simple design modules, such as minor adjustments to a neural network block, can be directly embedded within the text in the same container, without additional captions. This approach helps readers comprehend the proposed concept in a seamless and integrated manner.
+        </p>
+
+        <p class="text">
+            Here is an example I redesigned, illustrating the difference between standard and bottleneck residual blocks as proposed in <a href="https://arxiv.org/abs/1512.03385">Residual Networks</a>.
+        </p>
+
+        <img src="clarity/images/residual.png" style="width: 80%;">
+
+        <p class="text">
+            For more complex visual diagrams, such as detailed neural architecture designs, it is recommended to use a separate container with a distinct background colour. This ensures that diagrams stand out and are easily distinguishable from the main text. Additionally, a new caption style is provided to help explain each design detail clearly.
+        </p>
+
+        <p class="text">
+        Here is an example I redesigned, illustrating the architectural details in <a href="https://arxiv.org/abs/2010.11929">Vision Transformers (ViTs)</a>.
+        </p>
+    </div>
+
+
+    <div class="container blog main gray">
+            <img src="clarity/images/vit.png">
+            <p class="caption">
+                We split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we use the standard approach of adding an extra learnable “classification token” (represented as a gray image patch) to the sequence.  
+            </p>
+        </div>
+    </div>
+
+    <div class="container blog main">
+        <h2 >
+            Container Layouts
+        </h2>
+        <p class="text">
+            In Clarity, I have provided container widths with five options: <code>main</code>, <code>large</code>, <code>extra-large</code>, <code>extra-extra-large</code>, and <code>max</code>. These container layouts are designed to be responsive, automatically adjusting based on the screen size.  The default width is <code>main</code>, which is used for this blog post. Be cautious when using the <code>max</code> option, as it has zero padding. Unless you are certain of the design, it's always recommended to leave some space for visual aesthetic purposes.
+        </p>
+
+        <p class="text">
+        Here is an example I designed, illustrating the architectural details in <a href="https://shikun.io/projects/prismer">Prismer</a> using the <code>extra-large</code> container width.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png">
+        <p class="caption">
+            Prismer has two main trainable components: the <b>Experts Resampler</b> that converts variable multi-task signals to a fixed number of outputs, and the <b>Adaptor</b> that enhances the model's expressivity for vision-language reasoning. To ensure that the model takes advantage of the rich domain-specific knowledge encoded in the pre-trained experts, the majority of network weights are frozen during training, as represented by the snowflake icon.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>
+            Container Colour
+        </h2>
+
+        <p class="text">
+            In both visual diagram examples above, I used the <code>gray</code> option for the container to apply a subtle tint of gray, helping to distinguish it from the main container. This option is ideal for visual diagrams with a transparent background. For visual diagrams with a white background, I included the <code>gray-linear</code> option. This feature adds a tint of gray only to the edges of the container while keeping the center white, maintaining a clean and cohesive appearance while still providing distinct visual separation.  
+        </p>
+
+        <p class="text">
+            Here is an example illustrated in <a href="https://shikun.io/projects/variational-shape-learner">VSL</a> using the <code>gray-linear</code> container colour.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray-linear">
+        <p class="caption inline">
+          <b>Inter-Class Shape Morphing</b>  
+        </p>
+        <div class="columns-6">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter1.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter2.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter3.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter4.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter5.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_inter6.gif">
+        </div>
+        <p class="caption inline">
+            <b>Intra-Class Shape Morphing</b>
+        </p>
+        <div class="columns-6">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra1.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra2.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra3.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra4.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra5.gif">
+            <img src="https://shikun.io/projects/vsl/shape_morph/morph_intra6.gif">
+        </div>
+        <p class="caption">Note that, although these animations have a white background, they beautifully blend within this container. </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>
+            Design Features
+        </h1>
+
+        <p class="text">
+            Here, I will briefly introduce each design feature included in the Clarity template.
+        </p>
+
+        <h2>
+            Fundamentals
+        </h2>
+
+        <p class="text">
+            In Clarity, I have selected <a href="https://fonts.google.com/specimen/Poppins">Poppins</a> as the main sans-serif font and <a href="https://practicaltypography.com/charter.html">Charter</a> as the main serif font. Both fonts are freely distributed and without license restrictions. (Note that these two fonts differ from the licensed fonts used on my personal website.) All font sizes and weights are carefully tuned to be visually balanced and responsive across various screen sizes.
+        </p>
+
+        <p class="text">
+            Additionally, a simple grid system is provided in a separate CSS file. This can be easily applied by using a div with class <code>columns-x</code> (e.g., <code>columns-6</code> for creating the above VSL example). This CSS file is designed to be separate from the main CSS file, allowing for project-specific customisations on top of the broadly used features included in the Clarity template.
+        </p>
+
+        <h2>
+            Mathematics
+        </h2>
+
+        <p class="text">
+            Clarity supports $\LaTeX$ using the <a href="https://www.mathjax.org/">MathJax</a> JavaScript engine. It can elegantly render simple inline mathematical equations such as $y=ax+b$, as well as more complex displayed equations such as used in <a href="https://arxiv.org/abs/1312.6114">Variational Auto-Encoder (VAEs)</a>:
+            $$
+            L_{VAE}(x^{(i)}, \theta, \phi) = -\mathbb{E}_{z}\left[\log p_{\theta} \left(x^{(i)}|z\right) \right] + \text{KL}\left(q_\phi(z|x^{(i)}) \|\, p_\theta(z) \right).
+            $$
+        </p>
+
+        <p class="text">
+            I have chosen to use the <a href="https://ctan.org/pkg/tex-gyre-pagella?lang=en">Gyre-Pagella</a> font for $\LaTeX$, which blends well with the current serif font, ensuring a consistent and visually appealing presentation of mathematical content.
+        </p>
+
+        <h2>
+            Code
+        </h2>
+
+        <p class="text">
+            Clarity supports inline code blocks such as <code>python train.py</code>, as well as display code blocks. The display code blocks also support syntax highlighting using the <a href="https://highlightjs.org/">highlight.js</a> library. Here is an example using Classifier-Free Guidance with Rescale implementation proposed in <a href="https://arxiv.org/pdf/2305.08891">this paper</a>.
+
+<pre><code class="python">def apply_cfg(pos, neg, weight=7.5, rescale=0.7):
+    # Apply regular classifier-free guidance.
+    cfg = neg + weight * (pos - neg)
+
+    # Calculate standard deviations.
+    std_pos = pos.std([1,2,3], keepdim=True)
+    std_cfg = cfg.std([1,2,3], keepdim=True)
+
+    # Apply guidance rescale with fused operations.
+    factor = std_pos / std_cfg
+    factor = rescale * factor + (1 - rescale)
+    return cfg * factor</code></pre>      
+        </p>
+
+        <p class="text">
+            The display code block can also used for bibliographies, such as:
+        </p>
+
+<pre><code class="plaintext">@article{lecun2015deep,
+    title={Deep learning},
+    author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+    journal={nature},
+    year={2015},
+    publisher={Nature Publishing Group UK London}
+}</code></pre>
+
+        <p class="text">
+            Clarity uses my personal favourite monospaced font: <a href="https://github.com/tonsky/FiraCode">Fira Code</a> in code blocks. It also supports rendering beautifully coding literatures such as <code>--> ++ != ## <<>></code>.
+        </p>
+
+        <h2>
+            Tables
+        </h2>
+
+        <p class="text">
+            Clarity provides table blocks where every odd row is re-coloured with a gray tint. This helps to easily distinguish information within different rows, particularly with very wide tables. Here is an example using different model variants proposed in <a href="https://arxiv.org/pdf/2302.13971">Llama-1</a>.
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead class="center">
+                        <tr>
+                            <th>Params</th>
+                            <th >Dimension</th>
+                            <th>$n$ heads</th>
+                            <th>$n$ layers</th>
+                            <th >Learning Rate</th>
+                            <th>Batch Size</th>
+                            <th>$n$ Tokens</th>
+                        </tr>
+                    </thead>
+                    <tbody class="center">
+                        <tr>
+                            <td>6.7B</td>
+                            <td>4096</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>$3e^{-4}$</td>
+                            <td>4M</td>
+                            <td>1T</td>
+                        </tr>
+                        <tr>
+                            <td>13.0B</td>
+                            <td>5120</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>$3e^{-4}$</td>
+                            <td>4M</td>
+                            <td>1T</td>
+                        </tr>
+                        <tr>
+                            <td>32.5B</td>
+                            <td>6656</td>
+                            <td>52</td>
+                            <td>60</td>
+                            <td>$1.5e^{-4}$</td>
+                            <td>4M</td>
+                            <td>1T</td>
+                        </tr>
+                        <tr>
+                            <td>65.2B</td>
+                            <td>8192</td>
+                            <td>64</td>
+                            <td>80</td>
+                            <td>$1.5e^{-4}$</td>
+                            <td>4M</td>
+                            <td>1T</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
+
+        <h2>
+            Slide Display 
+        </h2>
+
+        <p class="text">  
+           The Slide Display feature is designed to allow readers to easily navigate and visualise multiple sequential or related visual elements, abstracted by a slide menu with dots. Here is an example using videos generated in <a href="https://nvlabs.github.io/stylegan3/">StyleGAN-3</a>.
+        </p>
+    </div>
+
+    <div class="container blog main gray">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+       
+        <div class="slide-content", style="display: block;">
+            <video loop muted autoplay src="https://nvlabs-fi-cdn.nvidia.com/_web/stylegan3/videos/video_2_metfaces_interpolations.mp4" style="width: 100%"> </video>
+        </div>
+
+        <div class="slide-content", style="display: none;">
+            <video loop muted autoplay src="https://nvlabs-fi-cdn.nvidia.com/_web/stylegan3/videos/video_3_afhq_interpolations.mp4" style="width: 100%"> </video>
+        </div>
+
+        <div class="slide-content", style="display: none;">
+            <video loop muted autoplay src="https://nvlabs-fi-cdn.nvidia.com/_web/stylegan3/videos/video_4_beaches_interpolations.mp4" style="width: 100%"> </video>
+        </div>
+
+
+        <p class="caption">
+            The videos show interpolations between hand-picked latent points in several datasets. Observe again how the textural detail appears fixed in the StyleGAN-2 result, but transforms smoothly with the rest of the scene in the alias-free StyleGAN-3.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>
+            Selection Display
+        </h2>
+        
+        <p class="text">
+            The Selection Display feature is designed to visualise multiple visual elements based on a user-selectable menu. This feature is commonly used for images visualised with conditional prompts, allowing users to explore different visual outputs by selecting various conditions or prompts from the menu. Here is an example using images generated in <a href="https://sites.research.google/parti/">Google Parti</a>.
+        </p>
+    </div>
+
+    <div class="container blog main gray">
+        <div class="columns-2">
+            <div>
+                 <img id="parti" src="https://sites.research.google/parti/paper_images_green_watermark_outputs/figures/cherries/tornado/tiger_cubism.jpg">
+                 <p class="caption selection">
+                    <b>Input Prompt: </b>  <br>
+                     A tornado made of 
+                     <Select id="image-selector1">
+                         <option value="sharks" selected>sharks</option>
+                         <option value="tiger">tigers</option>
+                         <option value="bees">bees</option>
+                      </Select>
+                      <select id="image-selector1-temp" style="display: none;">
+                         <option id="image-selector1-temp-option"></option>
+                     </select>
+                      crashing into a skyscraper. Painting in the style of
+                      <Select id="image-selector2">
+                         <option value="hokusai" selected>Hokusai</option>
+                         <option value="cubism"> abstract cubism</option>
+                         <option value="watercolor">watercolor</option>
+                      </Select>
+                      <select id="image-selector2-temp" style="display: none;">
+                         <option id="image-selector2-temp-option"></option>
+                     </select>
+                      .
+                 </p>
+            </div>
+
+            <div>
+                <img id="parti2" src="https://sites.research.google/parti/paper_images_green_watermark_outputs/figures/cherries/cherry2/panda_tennis.jpg">
+                <p class="caption selection">
+                   <b>Input Prompt: </b>  <br>
+                    A photo of an Athenian vase with a painting of 
+                    <Select id="image-selector3">
+                        <option value="panda" selected>pandas</option>
+                        <option value="toucan">toucans</option>
+                        <option value="pangolin">pangolins</option>
+                     </Select>
+                     <select id="image-selector3-temp" style="display: none;">
+                        <option id="image-selector3-temp-option"></option>
+                    </select>
+                     playing
+                     <Select id="image-selector4">
+                        <option value="tennis" selected>tennis</option>
+                        <option value="soccer"> soccer</option>
+                        <option value="basketball">basketball</option>
+                     </Select>
+                     <select id="image-selector4-temp" style="display: none;">
+                        <option id="image-selector4-temp-option"></option>
+                    </select>
+                    in the style of Egyptian hieroglyphics.
+                </p>
+           </div>
+        </div>
+    </div>
+
+
+    <div class="container blog main">
+        <h2 >    
+            Video Control / Buttons
+        </h2>
+
+        <p class="text">
+            Clarity supports video controls through a set of intuitive navigation buttons, making it easier for readers to pause, resume, and adjust playback speed as needed. This functionality is particularly useful for projects involving 3D vision and neural rendering. This feature was recently developed to support the <a href="https://kxhit.github.io/EscherNet">EscherNet</a> project, with an example demonstrating this control functionality below.
+        </p>
+    </div>
+
+
+    <div class="container blog extra-large gray-linear">
+        <div class="video-control">
+            <a class="button"onclick="SlowVideo('eschernet')"><i class="fa-solid fa-backward"></i></a>
+            <!-- Using FontAwesome Pro -->
+            <!-- <a class="button"onclick="ToggleVideo('eschernet')"><i class="fa-solid fa-play-pause"></i></a> -->
+
+            <!-- Using FontAwesome Free -->
+            <a class="button"onclick="ToggleVideo('eschernet')"><i class="fa-solid fa-play"></i></a>
+
+            <a class="button"onclick="FastVideo('eschernet')"><i class="fa-solid fa-forward"></i></a>
+            <a class="button"onclick="RestartVideo('eschernet')"><i class="fa-solid fa-rotate-left"></i></a>
+        </div>
+
+        <div class="columns-6">
+            <div>
+                <p class="caption inline center">Zero-1-to-3-XL</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/Zero123/output_GSO-xl/backpack/output.mp4">
+                </video>
+            </div>
+            <div>
+                <p class="caption inline center">EscherNet (1 View)</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/EscherNet/N2M100/backpack/output.mp4" >
+                </video>
+            </div>
+            <div>
+                <p class="caption inline center">EscherNet (2 Views)</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/EscherNet/N2M100/backpack/output.mp4" >
+                </video>
+            </div>
+            <div>
+                <p class="caption inline center">EscherNet (3 Views)</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/EscherNet/N3M100/backpack/output.mp4" >
+                </video>
+            </div>
+            <div>
+                <p class="caption inline center">EscherNet (5 Views)</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/EscherNet/N5M100/backpack/output.mp4">
+                </video>
+            </div>
+            <div>
+                <p class="caption inline center">EscherNet (10 Views)</p>
+                <video loop muted autoplay class="eschernet-video" src="https://kxhit.github.io/eschernet/GSO100/EscherNet/N10M100/backpack/output.mp4">
+                </video>
+            </div>
+        </div>
+
+        <p class="video-speed" id="eschernet-msg">
+            Speed: ×1.00
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1 >
+            Other Design Tips
+        </h1>
+
+        <h2 >
+            Colour
+        </h2>
+
+        <p class="text">
+            Colour is one of the most crucial visual elements in design and visualisation, and it is the main reason in making the <a href="https://www.theolympicdesign.com/olympic-games/the-look-of-the-games/paris-2024/">Paris Olympics 2024</a> such visually memorable and refreshing. While I'm not a colour expert, and there're always more to learn, I generally prefer using low-contrast, pastel-like colours in my designs. I typically use variants of gray and dark blue to represent common features, and employ warmer colours such as orange and red to highlight important design elements, as illustrated in the neural architecture design example from this blog post.
+        </p>
+
+        <p class="text">
+            For a more detailed understanding of colour design, I highly recommend the <a href="https://m3.material.io/styles/color/system/overview">Material Design Colour Guidelines</a> and <a href="https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/">this blog post</a> — which provide valuable insights and are definitely worth exploring.
+        </p>
+        
+        <h2 >
+            Icons
+        </h2>
+        <p class="text">  
+            In Clarity, all icons are integrated using <a href="https://fontawesome.com/">FontAwesome</a>. As one of the largest and most comprehensive icon libraries available, FontAwesome offers a vast collection of clean and minimalist icons that perfectly align with Clarity's design style and a wide range of use cases. I have found FontAwesome particularly valuable for many of my design projects, and its integration ensures that Clarity maintains a modern and consistent visual style throughout.
+            
+            <!-- I highly recommend purchasing the FontAwesome Pro version, as it offers a wider selection of icons and styles that integrate beautifully with this template. -->
+        <h2 >
+            Data Plots and Visualisation
+        </h2>
+
+        <p class="text">
+            I try to provide consistently high-quality plots useable for both $\LaTeX$ papers and websites using the <a href="https://www.overleaf.com/learn/latex/TikZ_package">TikZ</a> library. However, as many researchers know, TiKz offers stunning vector graphics but is notoriously difficult to use, and $\LaTeX$'s syntax design can be quite a headache (which makes new layout tools like  <a href="https://typst.app/">Typst</a> quite intriguing).
+
+        </p>
+
+        <p class="text">
+            To balance efficiency with quality, I typically use  <a href="https://matplotlib.org/">matplotlib</a> and other Python tools to quickly prototype plots. I then use <a href="https://github.com/nschloe/tikzplotlib">tikzplotlib</a> to convert these plots into TiKz code. Finally, I refine the generated Tikz code for the final presentation. Although this process isn't always perfect, it has proven to be my most efficient solution, allowing me to create high-quality plots within a reasonable time (such as this example of raw TiKz code <a href="https://www.dropbox.com/scl/fi/fsiz2il9yoiymk94v55v8/vqav2.tex?rlkey=9yb86m8aar91a8tijcgf6pq3w&dl=0">here</a>).
+        </p>
+    </div>
+
+    <div class="container blog extra-large">
+        <div class="columns-2">
+            <img src="https://shikun.io/projects/prismer/vqav2.png" style="width: 100%">
+            <img src="https://shikun.io/projects/prismer/nocaps.png" style="width: 100%">
+        </div>
+    </div>
+
+    <div class="container blog main">
+        <h1 >
+            Open-Source Contribution and Future Plans
+        </h1>
+
+        <p class="text">
+            The current version of Clarity already includes a range of design features suitable for many use cases. However, I plan to continue improving Clarity with new features and design elements as long as I am still working in AI research (and/or AGI is not solved :/). Since Clarity is open-source, I also welcome contributions from the community. Some example features that would be valuable additions include: 1. A content menu and hover citation system similar to those found in <a href="https://distill.pub/2021/understanding-gnns/">Distill blogs</a>, and 2. Music and sound layouts as demonstrated in <a href="https://openai.com/index/jukebox/">OpenAI Jukebox</a>.
+        </p>
+
+        <h1 >
+            License
+        </h1>
+
+        <p class="text">
+            Following <a href="https://nerfies.github.io/">Nerfie</a>, arguably one of the most popular website templates currently available, Clarity is also licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/"><b>Creative Commons Attribution-ShareAlike 4.0 International License</b></a>. This allows you to freely modify and distribute the template in any way you like. Similarly, I kindly ask that you link back to this page in the footer to acknowledge my work and efforts. Enjoy!
+        </p>
+    </div>
+
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="container">
+            <p>
+                This website is built using the <a href="https://shikun.io/projects/clarity">Clarity Template</a>, designed by <a href="https://shikun.io/">Shikun Liu</a>.
+            </p>
+        </div>    
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>    
+    <script src="assets/scripts/main.js"></script>    
+    </html>
+</body>

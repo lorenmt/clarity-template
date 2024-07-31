@@ -170,8 +170,8 @@ svg {
 }
 
 .container {
-  padding-right: calc(4vw - (100vw - 100%));
-  padding-left: 4vw;
+  padding-right: calc(6vw - (100vw - 100%));
+  padding-left: 6vw;
   flex: 1;
 }
 
@@ -538,7 +538,7 @@ div.container.blog.first {
   margin-top: 1.5vh;
 }
 div.container.blog.main {
-  padding: 0.5vh 4vw;
+  padding: 0.5vh 6vw;
 }
 div.container.blog.main.comment .content-comment {
   display: none;
@@ -548,21 +548,21 @@ div.container.blog.main.inline {
   padding-bottom: 1vh;
 }
 div.container.blog.large {
-  padding: 0.5vh 4vw;
+  padding: 0.5vh 6vw;
 }
 div.container.blog.large.inline {
   padding-top: 0;
   padding-bottom: 1vh;
 }
 div.container.blog.extra-large {
-  padding: 0.5vh 4vw;
+  padding: 0.5vh 6vw;
 }
 div.container.blog.extra-large.inline {
   padding-top: 0;
   padding-bottom: 1vh;
 }
 div.container.blog.extra-extra-large {
-  padding: 0.5vh 4vw;
+  padding: 0.5vh 6vw;
 }
 div.container.blog.extra-extra-large.inline {
   padding-top: 0;

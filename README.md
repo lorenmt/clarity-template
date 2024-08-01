@@ -9,8 +9,8 @@ Clarity is an open-source, minimalist website template designed specifically for
 Please follow the visual guidelines outlined in the [Clarity blog post](https://shikun.io/projects/clarity) or the `clarity.html` file to optimise visual layouts and design. Additionally, a minimalist example template, `minimal.html`, is provided to help you get started quickly.
 
 Clarity offers two font options: 
-1. [Charter](https://practicaltypography.com/charter.html) [serif] + [Poppins](https://fonts.google.com/specimen/Poppins) [sans-serif]: free fonts available for commercial use. 
-2.  [Tiempos Text](https://klim.co.nz/retail-fonts/tiempos-text/) [serif] + [Athletics](https://familytype.co/#athletics) [san-serif]: licensed fonts with the trial license available for non-commercial use.
+1. [Charter](https://practicaltypography.com/charter.html) + [Poppins](https://fonts.google.com/specimen/Poppins): free fonts available for commercial use. 
+2.  [Tiempos Text](https://klim.co.nz/retail-fonts/tiempos-text/) + [Athletics](https://familytype.co/#athletics): licensed fonts with the trial license available for non-commercial use.
 
 By default, the template uses the free fonts. To switch to the licensed fonts, follow these steps: 
 1. Download the trial license or purchase the full license and place the font files in the  `assets/fonts` directory.

@@ -101,7 +101,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li {
   color: #353535;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 300;
   font-size: 18px;
   font-family: "Poppins", serif;
@@ -186,27 +186,28 @@ svg {
 }
 
 @media screen and (max-width: 769px) {
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
+  p, td, th, tr, code, pre, ol, ul, li, div {
     font-size: 15px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 700;
+    font-weight: 600;
   }
   h1.title {
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0px;
     font-size: 26px;
   }
   h2 {
     line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
   }
   h3 {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 17px;
@@ -217,28 +218,29 @@ svg {
     padding-right: calc(8.5vw - (100vw - 100%));
     padding-left: 8.5vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
+  p, td, th, tr, code, pre, ol, ul, li, div {
     font-size: 16px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 2vh 0;
-    font-weight: 700;
+    font-weight: 600;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0px;
     font-size: 26px;
   }
   h2 {
     line-height: 1.2;
     padding: 2vh 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
   }
   h3 {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     padding: 2vh 0;
     font-size: 17px;
@@ -249,29 +251,23 @@ svg {
     padding-right: calc(12vw - (100vw - 100%));
     padding-left: 12vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 16px;
+  p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 17px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 1vh 0;
-    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
     font-size: 26px;
   }
   h2 {
-    line-height: 1.2;
     padding: 1vh 0;
-    font-weight: 700;
     font-size: 18px;
   }
   h3 {
-    font-weight: 700;
-    line-height: 1.2;
     padding: 1vh 0;
     font-size: 17px;
   }
@@ -281,29 +277,23 @@ svg {
     padding-right: calc(15vw - (100vw - 100%));
     padding-left: 15vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 17px;
+  p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 18px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.2;
     padding: 1vh 0;
-    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
     font-size: 30px;
   }
   h2 {
-    line-height: 1.2;
     padding: 1vh 0;
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
   }
   h3 {
-    font-weight: 700;
-    line-height: 1.2;
     padding: 1vh 0;
     font-size: 18px;
   }
@@ -313,31 +303,25 @@ svg {
     padding-right: calc(18vw - (100vw - 100%));
     padding-left: 18vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 18px;
+  p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 20px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
-    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
     font-size: 36px;
   }
   h2 {
-    line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
   }
   h3 {
-    font-weight: 700;
-    line-height: 1.2;
     padding: 1.5vh 0;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -345,29 +329,23 @@ svg {
     padding-right: calc(22vw - (100vw - 100%));
     padding-left: 22vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 18px;
+  p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 20px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
-    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
     font-size: 36px;
   }
   h2 {
-    line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 700;
     font-size: 24px;
   }
   h3 {
-    font-weight: 700;
-    line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 18px;
   }
@@ -377,29 +355,23 @@ svg {
     padding-right: calc(24vw - (100vw - 100%));
     padding-left: 24vw;
   }
-  a, p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 20px;
+  p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 22px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
-    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 500;
     font-size: 36px;
   }
   h2 {
-    line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 700;
     font-size: 24px;
   }
   h3 {
-    font-weight: 700;
-    line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 20px;
   }
@@ -417,6 +389,10 @@ footer {
 footer span {
   padding: 0 1px;
   font-size: 0.85em;
+}
+footer p {
+  font-family: "Charter";
+  font-style: italic;
 }
 
 @media screen and (min-width: 992px) {
@@ -470,15 +446,19 @@ div.container.blog#first-content div.blog-title .blog-intro {
   padding: 2vh 0;
 }
 div.container.blog#first-content div.blog-title .blog-intro p.author {
-  padding: 4px 0;
-  font-weight: 500;
+  padding: 4px 0 10px;
+  font-family: "Poppins";
   font-style: italic;
+  font-weight: 400;
   line-height: 1.2;
+  font-size: 85%;
 }
 div.container.blog#first-content div.blog-title .blog-intro p.abstract {
   font-family: "Poppins";
   font-weight: 400;
   padding: 1vh 0;
+  font-size: 85%;
+  line-height: 1.7;
 }
 div.container.blog#first-content div.blog-title .blog-intro div {
   padding-bottom: 1.5vh;
@@ -488,8 +468,8 @@ div.container.blog#first-content div.blog-title .blog-intro .info p {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #353535;
-  font-weight: 600;
-  font-size: 0.95em;
+  font-weight: 500;
+  font-size: 85%;
 }
 div.container.blog#first-content div.blog-title .blog-cover {
   position: relative;
@@ -516,19 +496,23 @@ div.container.blog p.text:last-child {
   padding-bottom: 0;
 }
 div.container.blog ul, div.container.blog ol {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
   padding: 0;
 }
 div.container.blog ul li p.text, div.container.blog ol li p.text {
-  padding: 0vh 0 1.5vh 0 !important;
+  padding: 0vh 0 1vh 0 !important;
 }
 div.container.blog p.caption {
   padding: 1vh 0;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
-  font-size: 90%;
+  letter-spacing: 0px;
+  font-size: 70%;
 }
 div.container.blog p.caption b {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 div.container.blog p.caption a {
   font-size: inherit;
@@ -903,8 +887,8 @@ button, .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.7em;
-  font-weight: 700;
+  font-size: 0.65em;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.075em;
   text-decoration: none;
@@ -1024,10 +1008,10 @@ table th, table td {
   font-size: 85%;
 }
 table th b, table td b {
-  font-weight: 900;
+  font-weight: 500;
 }
 table thead {
-  font-weight: 700;
+  font-weight: 500;
 }
 table tbody tr {
   border: solid 1px #404041;
@@ -1115,7 +1099,7 @@ pre code {
 select {
   border-color: transparent;
   border-radius: 5px;
-  padding: 5px 3px;
+  padding: 2px 2px;
   background-color: #ececec;
   display: inline;
   line-height: inherit;
@@ -1181,4 +1165,4 @@ select:after {
   100% {
     opacity: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main_free.css.map */

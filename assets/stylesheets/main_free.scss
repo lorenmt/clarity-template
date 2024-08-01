@@ -17,7 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li {
     color: $black;
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 300;
     font-size:$medium-font-size;
     font-family: $default-sans, serif;
@@ -101,27 +101,28 @@ svg {
   }
 
 @media screen and (max-width: $small-device) {
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+    p, td, th, tr, code, pre, ol, ul, li, div  {
         font-size: $extra-small-font-size;
     }
     h1 {
         font-size: $large-font-size;
         line-height: 1.2;
         padding: 1.5vh 0;
-        font-weight: 700;
+        font-weight: 600;
         &.title {
-            font-weight: 500;
+            font-weight: 400;
+            letter-spacing: 0px;
             font-size: $extra-large-font-size;
         }
     }
     h2 {
         line-height: 1.2;
         padding: 1.5vh 0;
-        font-weight: 700;
+        font-weight: 600;
         font-size: $medium-font-size;
     }
     h3 {
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.2;
         padding: 1.5vh 0;
         font-size: $small-medium-font-size;
@@ -134,29 +135,30 @@ svg {
         padding-right: calc(8.5vw - (100vw - 100%));
         padding-left: 8.5vw;
     }
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
+    p, td, th, tr, code, pre, ol, ul, li, div  {
         font-size: $small-font-size;
     }
     h1 {
         font-size: $large-font-size;
         line-height: 1.2;
         padding: 2vh 0;
-        font-weight: 700;
+        font-weight: 600;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
+            font-weight: 400;
+            letter-spacing: 0px;
             font-size: $extra-large-font-size;
         }
     }
     h2 {
         line-height: 1.2;
         padding: 2vh 0;
-        font-weight: 700;
+        font-weight: 600;
         font-size: $medium-font-size;
     }
     h3 {
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.2;
         padding: 2vh 0;
         font-size: $small-medium-font-size;
@@ -168,31 +170,25 @@ svg {
         padding-right: calc(12vw - (100vw - 100%));
         padding-left: 12vw;
     }
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
-        font-size: $small-font-size;
+    p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $small-medium-font-size;
     }
 
     h1 {
         font-size: $large-font-size;
         line-height: 1.2;
         padding: 1vh 0;
-        font-weight: 700;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
             font-size: $extra-large-font-size;
         }
     }
     h2 {
-        line-height: 1.2;
         padding: 1vh 0;
-        font-weight: 700;
         font-size: $medium-font-size;
     }
     h3 {
-        font-weight: 700;
-        line-height: 1.2;
         padding: 1vh 0;
         font-size: $small-medium-font-size;
     }
@@ -203,31 +199,25 @@ svg {
         padding-right: calc(15vw - (100vw - 100%));
         padding-left: 15vw;
     }
-    a, p, td, th, tr, code, pre, ol, ul, li, div {
-        font-size: $small-medium-font-size;
+    p, td, th, tr, code, pre, ol, ul, li, div {
+        font-size: $medium-font-size;
     }
 
     h1 {
-        font-size: $extra-extra-large-font-size;
+        font-size: $extra-large-font-size;
         line-height: 1.2;
         padding: 1vh 0;
-        font-weight: 700;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
             font-size: $extra-extra-large-font-size;
         }
     }
     h2 {
-        line-height: 1.2;
         padding: 1vh 0;
-        font-weight: 700;
-        font-size: $large-font-size;
+        font-size: $large-medium-font-size;
     }
     h3 {
-        font-weight: 700;
-        line-height: 1.2;
         padding: 1vh 0;
         font-size: $medium-font-size;
     }
@@ -238,33 +228,27 @@ svg {
         padding-right: calc(18vw - (100vw - 100%));
         padding-left: 18vw;
     }
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
-        font-size: $medium-font-size;
+    p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $large-medium-font-size;
     }
 
     h1 {
         font-size: $extra-extra-large-font-size;
         line-height: 1.2;
         padding: 1.75vh 0;
-        font-weight: 700;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
             font-size: $super-large-font-size;
         }
     }
     h2 {
-        line-height: 1.2;
         padding: 1.5vh 0;
-        font-weight: 700;
-        font-size: $large-font-size;
+        font-size: $extra-large-medium-font-size;
     }
     h3 {
-        font-weight: 700;
-        line-height: 1.2;
         padding: 1.5vh 0;
-        font-size: $medium-font-size;
+        font-size: $large-medium-font-size;
     }
 }
 
@@ -273,31 +257,25 @@ svg {
         padding-right: calc(22vw - (100vw - 100%));
         padding-left: 22vw;
     }
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
-        font-size: $medium-font-size;
+    p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $large-medium-font-size;
     }
 
     h1 {
         font-size: $extra-extra-large-font-size;
         line-height: 1.2;
         padding: 1.75vh 0;
-        font-weight: 700;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
             font-size: $super-large-font-size;
         }
     }
     h2 {
-        line-height: 1.2;
         padding: 1.5vh 0;
-        font-weight: 700;
         font-size: $large-font-size;
     }
     h3 {
-        font-weight: 700;
-        line-height: 1.2;
         padding: 1.5vh 0;
         font-size: $medium-font-size;
     }
@@ -310,31 +288,25 @@ svg {
         padding-left: 24vw;
     }
 
-    a, p, td, th, tr, code, pre, ol, ul, li, div  {
-        font-size: $large-medium-font-size;
+    p, td, th, tr, code, pre, ol, ul, li, div  {
+        font-size: $extra-large-medium-font-size;
     }
 
     h1 {
         font-size: $extra-extra-large-font-size;
         line-height: 1.2;
         padding: 1.75vh 0;
-        font-weight: 700;
 
         &.title {
             padding: 0 0 1vh;
-            font-weight: 500;
             font-size: $super-large-font-size;
         }
     }
     h2 {
-        line-height: 1.2;
         padding: 1.5vh 0;
-        font-weight: 700;
         font-size: $large-font-size;
     }
     h3 {
-        font-weight: 700;
-        line-height: 1.2;
         padding: 1.5vh 0;
         font-size: $large-medium-font-size;
     }
@@ -357,6 +329,11 @@ footer {
     span {
         padding: 0 1px;
         font-size: 0.85em;
+    }
+
+    p {
+        font-family: $default-serif;
+        font-style: italic;
     }
 }
 
@@ -416,16 +393,20 @@ div.container.blog#first-content {
             padding: 2vh 0;
 
             p.author {
-                padding: 4px 0;
-                font-weight: 500;
+                padding: 4px 0 10px;
+                font-family: $default-sans;
                 font-style: italic;
+                font-weight: 400;
                 line-height: 1.2;
+                font-size: 85%;
             }
 
             p.abstract {
                 font-family: $default-sans;
                 font-weight: 400;
                 padding: 1vh 0;
+                font-size: 85%;
+                line-height: 1.7;
             }
 
             div {
@@ -438,8 +419,8 @@ div.container.blog#first-content {
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     color: $black;
-                    font-weight: 600;
-                    font-size: 0.95em;
+                    font-weight: 500;
+                    font-size: 85%;
                 }
             }
         }
@@ -475,10 +456,13 @@ div.container.blog {
     }
 
     ul, ol {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
         padding: 0;
         li {
             p.text{
-                padding: 0vh 0 1.5vh 0 !important; 
+                padding: 0vh 0 1vh 0 !important; 
             }
         }
     }
@@ -486,12 +470,13 @@ div.container.blog {
 
     p.caption {
         padding: 1vh 0;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.2;
-        font-size: 90%;
+        letter-spacing: 0px;
+        font-size: 70%;
 
         b {
-            font-weight: 700 !important;
+            font-weight: 600 !important;
         }
 
         a {
@@ -588,7 +573,7 @@ div.container.blog {
 
 @media screen and (min-width: $small-device) {
     div.container.blog#first-content {
-        padding-top: 3vh;
+            padding-top: 3vh;
         div.blog-title {
             grid-template-columns: 1fr 1fr;
             column-gap: 5vw;
@@ -980,8 +965,8 @@ button, .button {
     display: inline-flex;
     align-items: center; 
     justify-content: center;
-    font-size: 0.7em;
-    font-weight: 700;
+    font-size: 0.65em;
+    font-weight: 500;
     font-family: $default-sans, sans-serif;
     // height: 1.5em;
     // line-height: 1.5em;
@@ -1102,11 +1087,11 @@ table {
     th, td{
         font-size: 85%;
         b {
-            font-weight: 900;
+            font-weight: 500;
         }
     }
     thead{
-        font-weight: 700;
+        font-weight: 500;
     }
     tbody tr {
         border: solid 1px $gray-100;
@@ -1216,7 +1201,7 @@ pre code {
 select {
     border-color:transparent;
     border-radius:5px;
-    padding:5px 3px;;
+    padding:2px 2px;
     background-color: $gray-10;
     display:inline;
     line-height: inherit;

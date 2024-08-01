@@ -10,7 +10,7 @@ Please follow the visual guidelines outlined in the [Clarity blog post](https://
 
 Clarity offers two font options: 
 1. [Charter](https://practicaltypography.com/charter.html) [serif] + [Poppins](https://fonts.google.com/specimen/Poppins) [sans-serif]: free fonts available for commercial use. 
-2.  [Tiempos Text](https://klim.co.nz/retail-fonts/tiempos-text/) [serif] + [Athletics](https://familytype.co/#athletics) [san-serif]: licensed fonts for non-commercial use only. 
+2.  [Tiempos Text](https://klim.co.nz/retail-fonts/tiempos-text/) [serif] + [Athletics](https://familytype.co/#athletics) [san-serif]: licensed fonts with trial licences for non-commercial use only. 
 
 By default, the template uses the free fonts. To switch to the licensed fonts, follow these steps: 
 1. Download the trial license or purchase the full license and place the font files in the  `assets/fonts` directory.

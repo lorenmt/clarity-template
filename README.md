@@ -2,8 +2,8 @@
 
 Clarity is an open-source, minimalist website template designed specifically for presenting AI research. It features a modular and clean design that is easy to customise for creating simple, project-based websites. With Clarity, you can effectively showcase your work, ensuring your research stands out in a visually appealing and professional manner. 
 
-<img class="foreground" src="assets/figures/clarity_intro.jpg" alt="Prismer">
-
+<img class="foreground" src="assets/figures/clarity_light.png" alt="Clarity">
+<img class="foreground" src="assets/figures/clarity_dark.png" alt="Clarity">
 
 ## Usage
 Please follow the visual guidelines outlined in the [Clarity blog post](https://shikun.io/projects/clarity) or the `clarity.html` file to optimise visual layouts and design. Additionally, a minimalist example template, `minimal.html`, is provided to help you get started quickly.
@@ -15,7 +15,7 @@ Clarity offers two font options:
 By default, the template uses the free fonts. To switch to the licensed fonts, follow these steps: 
 1. Download the trial license or purchase the full license and place the font files in the  `assets/fonts` directory.
 2. Optionally, use a [web font converter](https://transfonter.org/) to ensure compatibility across different browsers.
-3. Update the font-size and default font options in `stylesheets/_master.scss`. 
+3. Update the font-size and default font options in `assets/stylesheets/_master.scss`. 
 4. Change the corresponding CSS file path to `assets/stylesheets/main.css` in each HTML file. 
 
 To further improve the visual aesthetics, please consider purchasing the  [FontAwesome Pro](https://fontawesome.com/plans) for a complete icon set. 

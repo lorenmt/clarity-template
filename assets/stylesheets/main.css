@@ -418,6 +418,9 @@ footer span {
   padding: 0 1px;
   font-size: 0.85em;
 }
+footer p {
+  font-style: italic;
+}
 
 @media screen and (min-width: 992px) {
   footer {

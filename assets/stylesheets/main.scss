@@ -358,6 +358,10 @@ footer {
         padding: 0 1px;
         font-size: 0.85em;
     }
+
+    p {
+        font-style: italic;
+    }
 }
 
 @media screen and (min-width: $medium-device) {

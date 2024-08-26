@@ -1236,6 +1236,51 @@ select {
     }
 }
 
+/* ======================== Slider Display ===================== */
+.slider-container {
+    box-shadow: none;
+    outline: none;
+    --divider-width: 1px;
+    --divider-color: #000;
+    --default-handle-width: clamp(10px, 5vw, 40px);
+    --default-handle-color: #000;
+    &.white{
+        --divider-color: #fff;
+        --default-handle-color: #fff;
+    }
+    img {
+        padding: 0 !important;
+    }
+}
+
+.before, .after {
+    margin: 0;
+}
+
+.before figcaption {
+    left: 8px;
+}
+  
+.after figcaption {
+    right: 8px;
+}
+
+.before figcaption,
+.after figcaption {
+    font-size: 70%;
+    font-family: $default-sans;
+    background: transparent;
+    color: $black;
+    padding: 8px;
+    position: absolute;
+    top: 99%;
+    transform: translateY(-100%);
+    line-height: 100%;
+    &.white {
+        color:$white;
+    }
+}
+
 /* ======================== Video Control ===================== */
 .video-control{
     display:flex;

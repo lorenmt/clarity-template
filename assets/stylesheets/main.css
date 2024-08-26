@@ -1153,6 +1153,52 @@ select:after {
   border-top: 10px solid #333;
 }
 
+/* ======================== Slider Display ===================== */
+.slider-container {
+  box-shadow: none;
+  outline: none;
+  --divider-width: 1px;
+  --divider-color: #000;
+  --default-handle-width: clamp(10px, 5vw, 40px);
+  --default-handle-color: #000;
+}
+.slider-container.white {
+  --divider-color: #fff;
+  --default-handle-color: #fff;
+}
+.slider-container img {
+  padding: 0 !important;
+}
+
+.before, .after {
+  margin: 0;
+}
+
+.before figcaption {
+  left: 8px;
+}
+
+.after figcaption {
+  right: 8px;
+}
+
+.before figcaption,
+.after figcaption {
+  font-size: 90%;
+  font-family: "Poppins";
+  background: transparent;
+  color: #353535;
+  padding: 8px;
+  position: absolute;
+  top: 99%;
+  transform: translateY(-100%);
+  line-height: 100%;
+}
+.before figcaption.white,
+.after figcaption.white {
+  color: #f4f3ef;
+}
+
 /* ======================== Video Control ===================== */
 .video-control {
   display: flex;

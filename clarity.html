@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
     <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             "HTML-CSS": {
@@ -428,6 +430,43 @@
         </div>
     </div>
 
+    <div class="container blog main">
+        <h2>
+            Comparison Display
+        </h2>
+        
+        <p class="text">
+            The Comparison Display feature allows users to visualise two images side by side with a controllable slider, making it easy to compare visual results against a baseline. This feature is particularly useful for showcasing improvements or differences between two images. Here is an example using upsampled images generated with <a href="https://mingukkang.github.io/GigaGAN/">GigaGAN</a>.
+        </p>
+    </div>
+    <div class="container blog main gray extra-large">
+        <div class="columns-2">
+            <img-comparison-slider class="slider-container white">
+                <figure slot="first" class="before">
+                    <img src="https://mingukkang.github.io/GigaGAN/static/images/iguana_input.jpg">
+                    <figcaption class="white">Input Image (128px)</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                    <img src="https://mingukkang.github.io/GigaGAN/static/images/iguana_output.jpg">
+                    <figcaption class="white">GigaGAN Upsampled (1024px)</figcaption>
+                </figure>
+            </img-comparison-slider>
+            <img-comparison-slider class="slider-container">
+                <figure slot="first" class="before">
+                    <img src="https://mingukkang.github.io/GigaGAN/static/images/plant_input.jpg">
+                    <figcaption>Input Image (128px)</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                    <img src="https://mingukkang.github.io/GigaGAN/static/images/plant_output.jpg">
+                    <figcaption>GigaGAN Upsampled (1024px)</figcaption>
+                </figure>
+            </img-comparison-slider>
+        </div>
+        
+        <p class="caption">
+            Our GigaGAN framework can also be used to train an efficient, higher-quality upsampler. This can be applied to real images, or to the outputs of other text-to-image models like diffusion. GigaGAN can synthesize ultra high-res images at 4k resolution in 3.66 seconds.
+        </p>
+    </div>
 
     <div class="container blog main">
         <h2 >    

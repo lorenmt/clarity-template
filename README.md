@@ -5,6 +5,10 @@ Clarity is an open-source, minimalist website template designed specifically for
 <img class="foreground" src="assets/figures/clarity_light.png" alt="Clarity">
 <img class="foreground" src="assets/figures/clarity_dark.png" alt="Clarity">
 
+## Update
+- **Aug. 26, 2024**: Feature update with comparison display / [46ec3ee](https://github.com/lorenmt/clarity-template/commit/46ec3eee19ea86775982e3c93c5b35716bad2d09) suggested in  [Issue #1](https://github.com/lorenmt/clarity-template/issues/1#issue-2485070942).
+
+
 ## Usage
 Please follow the visual guidelines outlined in the [Clarity blog post](https://shikun.io/projects/clarity) or the `clarity.html` file to optimise visual layouts and design. Additionally, a minimalist example template, `minimal.html`, is provided to help you get started quickly.
 

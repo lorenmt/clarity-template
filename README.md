@@ -43,7 +43,7 @@ Clarity is an open-source, minimalist website template designed specifically for
 
 
 ## Update
-- **Aug. 26, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a titile page without project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
+- **Oct. 24, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a titile page without project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
 - **Aug. 26, 2024**: Feature update with comparison display / [46ec3ee](https://github.com/lorenmt/clarity-template/commit/46ec3eee19ea86775982e3c93c5b35716bad2d09) suggested in  [Issue #1](https://github.com/lorenmt/clarity-template/issues/1#issue-2485070942).
 
 

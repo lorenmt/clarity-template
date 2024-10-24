@@ -46,7 +46,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li {
   color: #353535;
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 300;
   font-size: 18px;
   font-family: "Poppins", serif;
@@ -131,28 +131,27 @@ svg {
 }
 
 @media screen and (max-width: 769px) {
-  p, td, th, tr, code, pre, ol, ul, li, div {
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
     font-size: 15px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   h1.title {
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-weight: 500;
     font-size: 26px;
   }
   h2 {
     line-height: 1.2;
     padding: 1.5vh 0;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
   }
   h3 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 17px;
@@ -163,29 +162,28 @@ svg {
     padding-right: calc(8.5vw - (100vw - 100%));
     padding-left: 8.5vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
     font-size: 16px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 2vh 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-weight: 500;
     font-size: 26px;
   }
   h2 {
     line-height: 1.2;
     padding: 2vh 0;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
   }
   h3 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     padding: 2vh 0;
     font-size: 17px;
@@ -196,23 +194,29 @@ svg {
     padding-right: calc(12vw - (100vw - 100%));
     padding-left: 12vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 17px;
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 16px;
   }
   h1 {
     font-size: 24px;
     line-height: 1.2;
     padding: 1vh 0;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
+    font-weight: 500;
     font-size: 26px;
   }
   h2 {
+    line-height: 1.2;
     padding: 1vh 0;
+    font-weight: 700;
     font-size: 18px;
   }
   h3 {
+    font-weight: 700;
+    line-height: 1.2;
     padding: 1vh 0;
     font-size: 17px;
   }
@@ -222,23 +226,29 @@ svg {
     padding-right: calc(15vw - (100vw - 100%));
     padding-left: 15vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 18px;
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 17px;
   }
   h1 {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 1.2;
     padding: 1vh 0;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
+    font-weight: 500;
     font-size: 30px;
   }
   h2 {
+    line-height: 1.2;
     padding: 1vh 0;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 24px;
   }
   h3 {
+    font-weight: 700;
+    line-height: 1.2;
     padding: 1vh 0;
     font-size: 18px;
   }
@@ -248,25 +258,31 @@ svg {
     padding-right: calc(18vw - (100vw - 100%));
     padding-left: 18vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 20px;
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 18px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
+    font-weight: 500;
     font-size: 36px;
   }
   h2 {
+    line-height: 1.2;
     padding: 1.5vh 0;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 24px;
   }
   h3 {
+    font-weight: 700;
+    line-height: 1.2;
     padding: 1.5vh 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -274,23 +290,29 @@ svg {
     padding-right: calc(22vw - (100vw - 100%));
     padding-left: 22vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 20px;
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 18px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
+    font-weight: 500;
     font-size: 36px;
   }
   h2 {
+    line-height: 1.2;
     padding: 1.5vh 0;
+    font-weight: 700;
     font-size: 24px;
   }
   h3 {
+    font-weight: 700;
+    line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 18px;
   }
@@ -300,23 +322,29 @@ svg {
     padding-right: calc(24vw - (100vw - 100%));
     padding-left: 24vw;
   }
-  p, td, th, tr, code, pre, ol, ul, li, div {
-    font-size: 22px;
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 20px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2;
     padding: 1.75vh 0;
+    font-weight: 700;
   }
   h1.title {
     padding: 0 0 1vh;
+    font-weight: 500;
     font-size: 36px;
   }
   h2 {
+    line-height: 1.2;
     padding: 1.5vh 0;
+    font-weight: 700;
     font-size: 24px;
   }
   h3 {
+    font-weight: 700;
+    line-height: 1.2;
     padding: 1.5vh 0;
     font-size: 20px;
   }
@@ -336,7 +364,6 @@ footer span {
   font-size: 0.85em;
 }
 footer p {
-  font-family: "Charter";
   font-style: italic;
 }
 
@@ -391,46 +418,41 @@ div.container.blog#first-content div.blog-title .blog-intro {
   padding: 2vh 0;
 }
 div.container.blog#first-content div.blog-title .blog-intro p.author {
-  padding: 4px 0 10px;
-  font-family: "Poppins";
+  padding: 4px 0;
+  font-weight: 500;
   font-style: italic;
-  font-weight: 400;
   line-height: 1.2;
-  font-size: 85%;
 }
 div.container.blog#first-content div.blog-title .blog-intro p.abstract {
   font-family: "Poppins";
   font-weight: 400;
   padding: 1vh 0;
-  font-size: 85%;
-  line-height: 1.7;
-}
-div.container.blog#first-content div.blog-title .blog-intro div {
-  padding-bottom: 1.5vh;
 }
 div.container.blog#first-content div.blog-title .blog-intro .info p {
-  padding: 0;
+  padding: 10px 0 0 0;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #353535;
-  font-weight: 500;
-  font-size: 85%;
+  font-weight: 600;
+  font-size: 0.95em;
 }
 div.container.blog#first-content div.blog-title .blog-cover {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 3vh 0;
+  padding: 2vh 0;
 }
 div.container.blog#first-content div.blog-title .blog-cover img.foreground {
   position: relative;
   z-index: 2;
+  padding: 0 !important;
 }
 div.container.blog#first-content div.blog-title .blog-cover img.background {
   position: absolute;
   z-index: 1;
   filter: blur(24px);
+  padding: 0 !important;
 }
 
 div.container.blog p.text {
@@ -447,17 +469,16 @@ div.container.blog ul, div.container.blog ol {
   padding: 0;
 }
 div.container.blog ul li p.text, div.container.blog ol li p.text {
-  padding: 0vh 0 1vh 0 !important;
+  padding: 0vh 0 1.5vh 0 !important;
 }
 div.container.blog p.caption {
   padding: 1vh 0;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0px;
-  font-size: 70%;
+  font-size: 90%;
 }
 div.container.blog p.caption b {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 div.container.blog p.caption a {
   font-size: inherit;
@@ -539,13 +560,13 @@ div.container.blog.gray-linear p.caption {
   }
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 5vw;
-         column-gap: 5vw;
-    grid-template-columns: 1.2fr 1fr !important;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     margin: 0 0 0 auto;
     width: 90%;
+    padding: 3vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     display: flex;
@@ -553,8 +574,23 @@ div.container.blog.gray-linear p.caption {
     justify-content: space-between;
     padding: 3vh 0;
   }
-  div.container.blog#first-content div.blog-title .blog-cover {
-    padding: 3vh 0;
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 6vw;
+  }
+  div.container.blog#first-content div.blog-title.no-cover h1 {
+    padding: 0 2%;
+    text-align: center;
+  }
+  div.container.blog#first-content div.blog-title.no-cover p.author {
+    padding: 10px 2%;
+    text-align: center;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .info {
+    display: flex;
+    justify-content: space-around;
   }
   div.container.blog.first {
     margin-top: 2vh;
@@ -596,6 +632,12 @@ div.container.blog.gray-linear p.caption {
     flex-direction: column;
     justify-content: space-between;
     padding: 3vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 7.5vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 3vh 0;
@@ -641,6 +683,12 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
   }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 9vw;
+  }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
   }
@@ -682,6 +730,12 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
   }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 9vw;
+  }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
   }
@@ -711,14 +765,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 65vh;
-    -moz-column-gap: 10vw;
-         column-gap: 10vw;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 8vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -749,14 +809,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 65vh;
-    -moz-column-gap: 10vw;
-         column-gap: 10vw;
+    -moz-column-gap: 6vw;
+         column-gap: 6vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 8vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -787,14 +853,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 75vh;
-    -moz-column-gap: 5vw;
-         column-gap: 5vw;
+    -moz-column-gap: 7vw;
+         column-gap: 7vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 10vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -827,13 +899,14 @@ button, .button {
   background-color: #ececec;
   border-radius: 10px;
   padding: 0.75em 1em;
+  margin-bottom: 10px;
   color: #353535;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65em;
-  font-weight: 500;
+  font-size: 0.7em;
+  font-weight: 700;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.075em;
   text-decoration: none;
@@ -953,10 +1026,10 @@ table th, table td {
   font-size: 85%;
 }
 table th b, table td b {
-  font-weight: 500;
+  font-weight: 900;
 }
 table thead {
-  font-weight: 500;
+  font-weight: 700;
 }
 table tbody tr {
   border: solid 1px #404041;
@@ -1026,7 +1099,7 @@ code {
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
   color: #666667;
-  font-size: 75%;
+  font-size: 75% !important;
 }
 
 pre {
@@ -1044,7 +1117,7 @@ pre code {
 select {
   border-color: transparent;
   border-radius: 5px;
-  padding: 2px 2px;
+  padding: 5px 3px;
   background-color: #ececec;
   display: inline;
   line-height: inherit;
@@ -1110,7 +1183,7 @@ select:after {
 
 .before figcaption,
 .after figcaption {
-  font-size: 70%;
+  font-size: 90%;
   font-family: "Poppins";
   background: transparent;
   color: #353535;
@@ -1156,4 +1229,278 @@ select:after {
   100% {
     opacity: 0;
   }
+}
+h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 769px) {
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 1.5vh 0;
+    font-weight: 600;
+  }
+  h1.title {
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 26px;
+  }
+  h2 {
+    line-height: 1.2;
+    padding: 1.5vh 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 1.5vh 0;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    padding-right: calc(8.5vw - (100vw - 100%));
+    padding-left: 8.5vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 2vh 0;
+    font-weight: 600;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 26px;
+  }
+  h2 {
+    line-height: 1.2;
+    padding: 2vh 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 2vh 0;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    padding-right: calc(12vw - (100vw - 100%));
+    padding-left: 12vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 1vh 0;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-size: 26px;
+  }
+  h2 {
+    padding: 1vh 0;
+    font-size: 18px;
+  }
+  h3 {
+    padding: 1vh 0;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-right: calc(15vw - (100vw - 100%));
+    padding-left: 15vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 1vh 0;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-size: 30px;
+  }
+  h2 {
+    padding: 1vh 0;
+    font-size: 20px;
+  }
+  h3 {
+    padding: 1vh 0;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    padding-right: calc(18vw - (100vw - 100%));
+    padding-left: 18vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    padding: 1.75vh 0;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-size: 36px;
+  }
+  h2 {
+    padding: 1.5vh 0;
+    font-size: 22px;
+  }
+  h3 {
+    padding: 1.5vh 0;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .container {
+    padding-right: calc(22vw - (100vw - 100%));
+    padding-left: 22vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    padding: 1.75vh 0;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-size: 36px;
+  }
+  h2 {
+    padding: 1.5vh 0;
+    font-size: 24px;
+  }
+  h3 {
+    padding: 1.5vh 0;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  .container {
+    padding-right: calc(24vw - (100vw - 100%));
+    padding-left: 24vw;
+  }
+  a, p, td, th, tr, code, pre, ol, ul, li, div {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    padding: 1.75vh 0;
+  }
+  h1.title {
+    padding: 0 0 1vh;
+    font-size: 36px;
+  }
+  h2 {
+    padding: 1.5vh 0;
+    font-size: 24px;
+  }
+  h3 {
+    padding: 1.5vh 0;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 3200px) {
+  .container {
+    padding-right: calc(32vw - (100vw - 100%));
+    padding-left: 28vw;
+  }
+}
+footer p {
+  font-family: "Charter";
+}
+
+/* ======================== Blog ===================== */
+div.container.blog#first-content div.blog-title .blog-intro p.author {
+  padding: 4px 0 10px;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 85%;
+}
+div.container.blog#first-content div.blog-title .blog-intro p.abstract {
+  font-family: "Poppins";
+  font-weight: 400;
+  padding: 1vh 0;
+  font-size: 85%;
+  line-height: 1.6;
+}
+div.container.blog#first-content div.blog-title .blog-intro .info p {
+  text-transform: uppercase;
+  color: #353535;
+  font-weight: 500;
+  font-size: 85%;
+}
+
+div.container.blog p.text {
+  padding: 1.5vh 0;
+  font-family: "Charter", sans-serif;
+}
+div.container.blog p.text:last-child {
+  padding-bottom: 0;
+}
+div.container.blog ul li p.text, div.container.blog ol li p.text {
+  padding: 0vh 0 1vh 0 !important;
+}
+div.container.blog p.caption {
+  padding: 1vh 0;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-size: 70%;
+}
+div.container.blog p.caption b {
+  font-weight: 600 !important;
+}
+
+/* ======================== Button ===================== */
+input[type=submit], input[type=reset], input[type=button],
+button, .button {
+  font-size: 0.65em;
+  font-weight: 500;
+}
+
+/* ======================== Table ===================== */
+table th b, table td b {
+  font-weight: 500;
+}
+table thead {
+  font-weight: 500;
+}
+
+/* ======================== Selection ===================== */
+select {
+  padding: 2px 2px;
+}
+
+/* ======================== Slider Display ===================== */
+.before figcaption,
+.after figcaption {
+  font-size: 70%;
 }/*# sourceMappingURL=main_free.css.map */

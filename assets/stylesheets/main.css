@@ -428,11 +428,8 @@ div.container.blog#first-content div.blog-title .blog-intro p.abstract {
   font-weight: 400;
   padding: 1vh 0;
 }
-div.container.blog#first-content div.blog-title .blog-intro div {
-  padding-bottom: 1.5vh;
-}
 div.container.blog#first-content div.blog-title .blog-intro .info p {
-  padding: 0;
+  padding: 10px 0 0 0;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #353535;
@@ -444,16 +441,18 @@ div.container.blog#first-content div.blog-title .blog-cover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 3vh 0;
+  padding: 2vh 0;
 }
 div.container.blog#first-content div.blog-title .blog-cover img.foreground {
   position: relative;
   z-index: 2;
+  padding: 0 !important;
 }
 div.container.blog#first-content div.blog-title .blog-cover img.background {
   position: absolute;
   z-index: 1;
   filter: blur(24px);
+  padding: 0 !important;
 }
 
 div.container.blog p.text {
@@ -464,6 +463,9 @@ div.container.blog p.text:last-child {
   padding-bottom: 0;
 }
 div.container.blog ul, div.container.blog ol {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
   padding: 0;
 }
 div.container.blog ul li p.text, div.container.blog ol li p.text {
@@ -558,13 +560,13 @@ div.container.blog.gray-linear p.caption {
   }
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 5vw;
-         column-gap: 5vw;
-    grid-template-columns: 1.2fr 1fr !important;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     margin: 0 0 0 auto;
     width: 90%;
+    padding: 3vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     display: flex;
@@ -572,8 +574,23 @@ div.container.blog.gray-linear p.caption {
     justify-content: space-between;
     padding: 3vh 0;
   }
-  div.container.blog#first-content div.blog-title .blog-cover {
-    padding: 3vh 0;
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 6vw;
+  }
+  div.container.blog#first-content div.blog-title.no-cover h1 {
+    padding: 0 2%;
+    text-align: center;
+  }
+  div.container.blog#first-content div.blog-title.no-cover p.author {
+    padding: 10px 2%;
+    text-align: center;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .info {
+    display: flex;
+    justify-content: space-around;
   }
   div.container.blog.first {
     margin-top: 2vh;
@@ -615,6 +632,12 @@ div.container.blog.gray-linear p.caption {
     flex-direction: column;
     justify-content: space-between;
     padding: 3vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 7.5vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 3vh 0;
@@ -660,6 +683,12 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
   }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 9vw;
+  }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
   }
@@ -701,6 +730,12 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
   }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 9vw;
+  }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
   }
@@ -730,14 +765,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 65vh;
-    -moz-column-gap: 10vw;
-         column-gap: 10vw;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 8vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -768,14 +809,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 65vh;
-    -moz-column-gap: 10vw;
-         column-gap: 10vw;
+    -moz-column-gap: 6vw;
+         column-gap: 6vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 8vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -806,14 +853,20 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title {
     grid-template-columns: 1fr 1fr;
     grid-row: 75vh;
-    -moz-column-gap: 5vw;
-         column-gap: 5vw;
+    -moz-column-gap: 7vw;
+         column-gap: 7vw;
   }
   div.container.blog#first-content div.blog-title .blog-intro {
     padding: 5vh 0;
   }
   div.container.blog#first-content div.blog-title .blog-intro p {
     padding: 1.5vh 0;
+  }
+  div.container.blog#first-content div.blog-title.no-cover {
+    grid-template-columns: 1fr;
+  }
+  div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+    padding: 6vh 10vw;
   }
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 5vh 0;
@@ -846,6 +899,7 @@ button, .button {
   background-color: #ececec;
   border-radius: 10px;
   padding: 0.75em 1em;
+  margin-bottom: 10px;
   color: #353535;
   cursor: pointer;
   display: inline-flex;
@@ -1045,7 +1099,7 @@ code {
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
   color: #666667;
-  font-size: 75%;
+  font-size: 75% !important;
 }
 
 pre {

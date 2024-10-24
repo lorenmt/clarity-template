@@ -5,35 +5,35 @@ Clarity is an open-source, minimalist website template designed specifically for
 ## Design Showcase
 
 - Clarity Light Theme with Project Cover:
-```
+```css
 <div class="container blog" id="first-content" style="background-color: #E0E4E6;">
     <div class="blog-title">
 ```
 <img class="foreground" src="assets/figures/clarity_light.png">
 
 - Clarity Dark Theme with Project Cover:
-```
+```css
 <div class="container blog" id="first-content" style="background-color: #304463;">
     <div class="blog-title white">
 ```
 <img class="foreground" src="assets/figures/clarity_dark.png">
 
 - Clarity Light Theme without Project Cover:
-```
+```css
 <div class="container blog" id="first-content" style="background-color: #304463;">
     <div class="blog-title no-cover">
 ```
 <img class="foreground" src="assets/figures/clarity_light_no_cover.png">
 
 - Clarity Dark Theme without Project Cover:
-```
+```css
 <div class="container blog" id="first-content" style="background-color: #E0E4E6;">
     <div class="blog-title white no-cover">
 ```
 <img class="foreground" src="assets/figures/clarity_dark_no_cover.png">
 
 - Clarity Gradient Theme without Project Cover:
-```
+```css
 <div class="container blog" id="first-content" style="background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);">
     <div class="blog-title no-cover">
 ```

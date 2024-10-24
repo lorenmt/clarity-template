@@ -43,7 +43,7 @@ Clarity is an open-source, minimalist website template designed specifically for
 
 
 ## Update
-- **Oct. 24, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a titile page without project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
+- **Oct. 24, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a title page design without a project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
 - **Aug. 26, 2024**: Feature update with comparison display / [46ec3ee](https://github.com/lorenmt/clarity-template/commit/46ec3eee19ea86775982e3c93c5b35716bad2d09) suggested in  [Issue #1](https://github.com/lorenmt/clarity-template/issues/1#issue-2485070942).
 
 
@@ -57,10 +57,9 @@ Clarity offers two font options:
 By default, the template uses the free fonts. To switch to the licensed fonts, follow these steps: 
 1. Download the trial license or purchase the full license and place the font files in the  `assets/fonts` directory.
 2. Optionally, use a [web font converter](https://transfonter.org/) to ensure compatibility across different browsers.
-3. Update the font-size and default font options in `assets/stylesheets/_master.scss`. 
-4. Change the corresponding CSS file path to `assets/stylesheets/main.css` in each HTML file. 
-
-To further improve the visual aesthetics, please consider purchasing the  [FontAwesome Pro](https://fontawesome.com/plans) for a complete icon set. 
+3. Update the font-size and default font options in `assets/stylesheets/_master.scss` (just comment in and out). 
+4. Change the corresponding CSS file path to `assets/stylesheets/main.css` in your project HTML file. 
+5. To further improve the visual aesthetics, please consider purchasing the  [FontAwesome Pro](https://fontawesome.com/plans) for a complete icon set, and update `<link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">` with `<link href="assets/fontawesome-pro-6.6.0-web/css/all.min.css" rel="stylesheet">` in the `<head>` tag.
 
 ## License
 This project follows  <a href="https://creativecommons.org/licenses/by-sa/4.0/"><b>Creative Commons Attribution-ShareAlike 4.0 International License</b></a>. This allows you to freely modify and distribute the template in any way you like. In return, I kindly ask that you link back to the [Clarity blog post](https://shikun.io/projects/clarity) in the footer to acknowledge my work and efforts. Enjoy!

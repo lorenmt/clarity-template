@@ -43,7 +43,7 @@ Clarity is an open-source, minimalist website template designed specifically for
 
 
 ## Update
-- **Oct. 8, 2024**: Feature update with `slideshow` design for automated slideshow display. Please checkout the `clarity.html` for detailed usage and instructions.
+- **Oct. 8, 2024**: Feature update with `slideshow` design for automated slideshow display.For detailed usage and instructions, please refer to the `clarity.html` file.
 
 <p align="center">
   <img src="/assets/figures/slide_show.gif"/>

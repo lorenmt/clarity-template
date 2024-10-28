@@ -43,9 +43,18 @@ Clarity is an open-source, minimalist website template designed specifically for
 
 
 ## Update
+- **Oct. 8, 2024**: Feature update with `slideshow` design for automated slideshow display. Please checkout the `clarity.html` for detailed usage and instructions.
+
+<p align="center">
+  <img src="/assets/figures/slide_show.gif"/>
+</p>
+
 - **Oct. 24, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a title page design without a project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
 - **Aug. 26, 2024**: Feature update with comparison display / [46ec3ee](https://github.com/lorenmt/clarity-template/commit/46ec3eee19ea86775982e3c93c5b35716bad2d09) suggested in  [Issue #1](https://github.com/lorenmt/clarity-template/issues/1#issue-2485070942).
 
+<p align="center">
+  <img src="/assets/figures/comparison.gif"/>
+</p>
 
 ## Usage
 Please follow the visual guidelines outlined in the [Clarity blog post](https://shikun.io/projects/clarity) or the `clarity.html` file to optimise visual layouts and design. Additionally, a minimalist example template, `minimal.html`, is provided to help you get started quickly.

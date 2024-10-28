@@ -1229,4 +1229,36 @@ select:after {
   100% {
     opacity: 0;
   }
+}
+/* ======================== Slide Show Control ===================== */
+.slideshow .navigation {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.slideshow .slider {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.slideshow .slider:hover {
+  cursor: pointer;
+}
+.slideshow .slider .slider-item {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  padding-left: 40px;
+}
+.slideshow .slider .slider-item video {
+  display: block;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

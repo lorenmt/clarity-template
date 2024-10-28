@@ -367,6 +367,84 @@
 
     <div class="container blog main">
         <h2>
+            Auto Slideshow Display
+        </h2>
+        <p class="text">
+            Alternatively, the Auto Slideshow Display feature enables readers to enjoy a large array of visual elements through an automated, slideshow-like presentation. Users can also navigate through the slideshow manually with "Left" and "Right" buttons. Below is an example using videos generated in <a href="https://mardini-vidgen.github.io/">MarDini</a>.
+        </p>
+        <!-- 
+        1. You may add another row of visual elements by simply adding a video element in each "slider-item" div. Correspondingly, you need to change the following in the scss file (under Slideshow Control): height: 440px into 440px * num_rows. 
+        2. You may also change the fixed image size by changing the following:
+            a. scss: .slider-item width: 400px -> changed width; 
+            b. scss: height: 440px -> changed width + padding_bottom;
+            c. javascript: item.style.left = `${(i-1) * 440}px`) -> changed width + padding_left
+        -->
+    </div>
+    <div class="container blog max gray">
+        <div class="slideshow">
+            <div class="navigation">
+                <!-- Using FontAwesome Pro -->
+                <!-- <a class="button icon" id="prev_btn"><i class="fa-solid fa-left" ></i></a>
+                <a class="button icon" id="next_btn"><i class="fa-solid fa-right"></i></a> -->
+                <!-- Using FontAwesome Free -->
+                <a class="button icon" id="prev_btn"><i class="fa-solid fa-arrow-left"></i></a>
+                <a class="button icon" id="next_btn"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="slider">
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/1.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/2.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/3.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/4.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/5.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/6.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/7.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/8.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/9.mp4"></video>
+                </div>                   
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/10.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/11.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/12.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/13.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/14.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/15.mp4"></video>
+                </div>
+                <div class="slider-item">
+                    <video loop playsinline muted autoplay src="https://mardini-vidgen.github.io/clarity/videos/16.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blog main">
+        <h2>
             Selection Display
         </h2>
         

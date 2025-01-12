@@ -43,17 +43,23 @@ Clarity is an open-source, minimalist website template designed specifically for
 
 
 ## Update
+- **Jan. 12, 2025**: Feature update with `navbar` design for hoverable table of content (thanks [@yongyizang](https://github.com/yongyizang) for his generous contribution). Please comment out or in `<script src="assets/scripts/navbar.js"></script>` to activate or deactivate this feature.
+<p align="center">
+  <img src="assets/figures/toc_web.gif"/>
+  <img src="assets/figures/toc_phone.gif"/>
+</p>
+
 - **Oct. 28, 2024**: Feature update with `slideshow` design for automated slideshow display. For detailed usage and instructions, please refer to the `clarity.html` file.
 
 <p align="center">
-  <img src="/assets/figures/slide_show.gif"/>
+  <img src="assets/figures/slide_show.gif"/>
 </p>
 
 - **Oct. 24, 2024**: Feature update with `no-cover` design for title page design layout. For anyone prefer a title page design without a project cover, change `<div class="blog-title">` into `<div class="blog-title no-cover">`.
 - **Aug. 26, 2024**: Feature update with comparison display / [46ec3ee](https://github.com/lorenmt/clarity-template/commit/46ec3eee19ea86775982e3c93c5b35716bad2d09) suggested in  [Issue #1](https://github.com/lorenmt/clarity-template/issues/1#issue-2485070942).
 
 <p align="center">
-  <img src="/assets/figures/comparison.gif"/>
+  <img src="assets/figures/comparison.gif"/>
 </p>
 
 ## Usage

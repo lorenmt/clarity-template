@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
             z-index: 1000;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
         }
 
         /* Desktop styles */
@@ -14,16 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
             .nav-container {
                 position: fixed;
                 left: 20px;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 5%;
+                transform: translateY(-5%) translateX(5%);
                 padding: 15px;
-                border-radius: 8px;
+                border-radius: 16px;
                 background: rgba(255, 255, 255, 0.5);
                 opacity: 0;
                 pointer-events: none;
                 max-width: 300px;
                 width: 300px;
-                transition: all 0.3s ease;
                 display: flex;
                 flex-direction: column;
             }
@@ -31,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .nav-container.visible {
                 opacity: 1;
                 pointer-events: all;
+                transition: all 1.3s ease;
             }
 
             .nav-container.collapsed {
@@ -176,10 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             .nav-close {
                 display: none;
-                font-size: 24px;
-                background: none;
-                border: none;
-                padding: 0;
                 cursor: pointer;
             }
 
@@ -238,17 +233,13 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.innerHTML = `
         <div class="nav-header">
             <span class="current-section"></span>
-            <button class="nav-close">&times;</button>
+            <a class="nav-close"><i class="fa-solid fa-xmark"></i></a>
         </div>
         <div class="desktop-header">
             <span class="current-section"></span>
             <button class="nav-collapse">
-                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 18l6-6-6-6"/>
-                </svg>
-                <svg class="collapse-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M15 18l-6-6 6-6"/>
-                </svg>
+                <a class="expand-icon"><i class="fa-solid fa-angle-down"></i></a>
+                <a class="collapse-icon"><i class="fa-solid fa-arrow-left-long"></i></a>
             </button>
         </div>
         <ul class="nav-list"></ul>
@@ -316,11 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    closeBtn.addEventListener('click', () => {
-        if (window.innerWidth < 768) {
-            resetNavbarState();
-        }
-    });
+
 
     // Scroll handling
     let lastScrollTop = 0;

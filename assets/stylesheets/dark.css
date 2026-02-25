@@ -1,0 +1,617 @@
+/* ======================== CatStory Dark Theme ======================== */
+
+:root {
+    --bg-primary: #0b0b0f;
+    --bg-secondary: #111118;
+    --bg-tertiary: #181820;
+    --bg-card: #14141c;
+    --text-primary: #e8e8ef;
+    --text-secondary: #a0a0b0;
+    --text-muted: #6a6a7a;
+    --accent: #6ec1e4;
+    --accent-glow: rgba(110, 193, 228, 0.25);
+    --accent-secondary: #a78bfa;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-accent: rgba(110, 193, 228, 0.2);
+}
+
+body {
+    background-color: var(--bg-primary) !important;
+}
+
+/* ======================== Typography ======================== */
+
+h1, h2, h3, h4, h5, h6, p, a, code, pre, ol, ul, li, div {
+    color: var(--text-primary);
+}
+
+div.container.blog p.text {
+    color: var(--text-secondary);
+}
+
+div.container.blog p.caption {
+    color: var(--text-muted);
+}
+
+/* ======================== Title Page ======================== */
+
+div.container.blog#first-content {
+    background-color: var(--bg-primary) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+div.container.blog#first-content div.blog-title.white * {
+    color: var(--text-primary);
+}
+
+div.container.blog#first-content div.blog-title .blog-intro p.author {
+    color: var(--text-secondary);
+}
+
+div.container.blog#first-content div.blog-title .blog-intro .info p {
+    color: var(--accent) !important;
+    letter-spacing: 2px;
+}
+
+/* ======================== Containers ======================== */
+
+div.container.blog.gray {
+    background-color: var(--bg-secondary) !important;
+}
+
+div.container.blog.gray-linear {
+    background: linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-primary) 10%, var(--bg-primary) 90%, var(--bg-secondary) 100%) !important;
+}
+
+/* ======================== Buttons ======================== */
+
+input[type=submit], input[type=reset], input[type=button],
+button, .button {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,
+button:hover, .button:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+}
+
+/* ======================== Tables ======================== */
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+}
+
+table td {
+    color: var(--text-secondary);
+}
+
+table tbody tr {
+    border-color: var(--border);
+}
+
+table tbody tr:nth-child(2n+1) {
+    background-color: var(--bg-secondary);
+}
+
+table tbody tr:first-child {
+    border-top-color: var(--border);
+}
+
+table tbody tr:last-child {
+    border-bottom-color: var(--border);
+}
+
+table td.gray {
+    background-color: var(--bg-secondary) !important;
+}
+
+table td.nogray {
+    background-color: var(--bg-primary) !important;
+}
+
+/* ======================== Code ======================== */
+
+code {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border);
+    color: var(--text-muted);
+}
+
+pre code {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-secondary);
+}
+
+/* ======================== Footer ======================== */
+
+footer {
+    background-color: var(--bg-secondary) !important;
+    border-top: 1px solid var(--border);
+}
+
+footer p, footer a {
+    color: var(--text-muted) !important;
+}
+
+/* ======================== Selection ======================== */
+
+::selection {
+    color: var(--bg-primary);
+    background: var(--accent);
+}
+
+::-moz-selection {
+    color: var(--bg-primary);
+    background: var(--accent);
+}
+
+/* ======================== Scrollbar ======================== */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 3px;
+}
+
+/* ======================== HR ======================== */
+
+hr {
+    border-top-color: var(--border) !important;
+    border-bottom-color: transparent !important;
+}
+
+hr.soft {
+    border-top-color: var(--border) !important;
+}
+
+/* ======================== Navbar Dark Override ======================== */
+
+@media (min-width: 768px) {
+    .nav-container {
+        background: rgba(17, 17, 24, 0.85) !important;
+    }
+    .nav-item {
+        color: var(--text-muted) !important;
+    }
+    .nav-item.active {
+        color: var(--text-primary) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-container {
+        background: rgba(11, 11, 15, 0.95) !important;
+    }
+    .nav-container.expanded {
+        background: rgba(11, 11, 15, 0.98) !important;
+    }
+    .current-section {
+        color: var(--text-primary) !important;
+    }
+    .nav-item {
+        color: var(--text-muted) !important;
+        border-bottom-color: var(--border) !important;
+    }
+    .nav-item.active {
+        color: var(--text-primary) !important;
+    }
+}
+
+/* ======================== Slide Dots ======================== */
+
+.slide-menu .dots .dot {
+    background-color: var(--bg-tertiary);
+}
+
+.slide-menu .dots .dot.active {
+    background-color: var(--accent);
+}
+
+/* ======================== Video Duration Timeline ======================== */
+
+.duration-timeline {
+    position: relative;
+    padding: 60px 4vw 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+    .duration-timeline {
+        padding: 60px 6vw 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .duration-timeline {
+        padding: 60px 4vw 40px;
+    }
+}
+
+/* Central vertical arrow line */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--accent) 5%,
+        var(--accent) 90%,
+        transparent 100%
+    );
+    opacity: 0.3;
+}
+
+/* Glow effect on the line */
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--accent-glow) 5%,
+        var(--accent-glow) 90%,
+        transparent 100%
+    );
+    filter: blur(4px);
+}
+
+/* Arrow head at bottom */
+.timeline-line::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 14px solid var(--accent);
+    opacity: 0.5;
+}
+
+/* Individual timeline node */
+.timeline-node {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.timeline-node:last-child {
+    margin-bottom: 0;
+}
+
+/* The dot on the center line */
+.timeline-dot {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6px;
+    z-index: 2;
+}
+
+.timeline-dot .dot-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent-glow), 0 0 24px rgba(110, 193, 228, 0.1);
+    position: relative;
+}
+
+.timeline-dot .dot-circle::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 1px solid rgba(110, 193, 228, 0.2);
+}
+
+/* Duration label */
+.timeline-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+/* Video card */
+.timeline-video-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-video-card:hover {
+    border-color: var(--border-accent);
+    box-shadow: 0 4px 30px rgba(110, 193, 228, 0.06);
+}
+
+.timeline-video-card video {
+    width: 100%;
+    display: block;
+    border-radius: 11px 11px 0 0;
+}
+
+.timeline-video-info {
+    padding: 14px 18px;
+}
+
+.timeline-video-info .duration-tag {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(110, 193, 228, 0.08);
+    border: 1px solid rgba(110, 193, 228, 0.15);
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.timeline-video-info p {
+    font-size: 13px !important;
+    color: var(--text-muted) !important;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Alternating layout: odd nodes video on left, even on right */
+.timeline-node:nth-child(odd) .timeline-video-card {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.timeline-node:nth-child(odd) .timeline-dot {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.timeline-node:nth-child(odd) .timeline-spacer {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.timeline-node:nth-child(even) .timeline-spacer {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.timeline-node:nth-child(even) .timeline-dot {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.timeline-node:nth-child(even) .timeline-video-card {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* Timeline section header */
+.timeline-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.timeline-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.timeline-header p {
+    color: var(--text-muted);
+    font-size: 15px !important;
+}
+
+/* Responsive: stack on mobile */
+@media screen and (max-width: 769px) {
+    .timeline-node {
+        grid-template-columns: 30px 1fr;
+        gap: 0 12px;
+        margin-bottom: 32px;
+    }
+
+    .timeline-line {
+        left: 15px;
+    }
+
+    .timeline-dot {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    .timeline-video-card {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+    }
+
+    .timeline-spacer {
+        display: none !important;
+    }
+
+    .timeline-node:nth-child(odd) .timeline-video-card,
+    .timeline-node:nth-child(even) .timeline-video-card {
+        grid-column: 2 !important;
+    }
+
+    .timeline-node:nth-child(odd) .timeline-dot,
+    .timeline-node:nth-child(even) .timeline-dot {
+        grid-column: 1 !important;
+    }
+}
+
+/* ======================== Key Results Cards ======================== */
+
+.result-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2vh 0;
+}
+
+.result-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.result-card:hover {
+    border-color: var(--border-accent);
+}
+
+.result-card .metric-value {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px !important;
+    font-weight: 700;
+    color: var(--accent) !important;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.result-card .metric-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.result-card .metric-detail {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    margin-top: 6px;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 769px) {
+    .result-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ======================== Accent text ======================== */
+
+.accent {
+    color: var(--accent) !important;
+}
+
+.accent-secondary {
+    color: var(--accent-secondary) !important;
+}
+
+/* ======================== Section divider ======================== */
+
+.section-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.3;
+    margin: 1vh 0;
+    border: none;
+}
+
+/* ======================== Architecture figure ======================== */
+
+.arch-figure {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 1vh 0;
+}
+
+.arch-figure img {
+    border-radius: 8px;
+    filter: brightness(0.95);
+}
+
+/* ======================== Comparison figure dark ======================== */
+
+.comparison-figure {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-figure img {
+    padding: 0 !important;
+}
+
+/* ======================== Inline equation block ======================== */
+
+.equation-block {
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 1.5vh 0;
+}
+
+.equation-block .MathJax {
+    color: var(--text-primary) !important;
+}
+
+/* ======================== Max container inner padding ======================== */
+
+div.container.blog.max .inner-padded {
+    padding: 0 4vw;
+}
+
+@media screen and (min-width: 769px) {
+    div.container.blog.max .inner-padded {
+        padding: 0 8vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div.container.blog.max .inner-padded {
+        padding: 0 12vw;
+    }
+}

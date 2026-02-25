@@ -142,6 +142,15 @@
                     <video autoplay loop muted playsinline>
                         <source src="assets/videos/3s_1.mp4" type="video/mp4">
                     </video>
+                    <div class="video-player-controls">
+                        <button class="vpc-btn vpc-play"><i class="fa-solid fa-pause"></i></button>
+                        <button class="vpc-btn vpc-slow" title="Slow down"><i class="fa-solid fa-backward"></i></button>
+                        <button class="vpc-btn vpc-fast" title="Speed up"><i class="fa-solid fa-forward"></i></button>
+                        <button class="vpc-btn vpc-restart" title="Restart"><i class="fa-solid fa-rotate-left"></i></button>
+                        <input type="range" class="vpc-scrub" min="0" max="100" value="0" step="0.1">
+                        <span class="vpc-elapsed">00:00</span>
+                        <span class="vpc-speed">1.00x</span>
+                    </div>
                     <div class="timeline-video-info">
                         <span class="duration-tag">3 seconds</span>
                         <p>Stage 1 &mdash; Full SFT. Fine-grained instrument-tissue dynamics within a single procedural phase.</p>
@@ -165,6 +174,15 @@
                     <video autoplay loop muted playsinline>
                         <source src="assets/videos/9s_p43.mp4" type="video/mp4">
                     </video>
+                    <div class="video-player-controls">
+                        <button class="vpc-btn vpc-play"><i class="fa-solid fa-pause"></i></button>
+                        <button class="vpc-btn vpc-slow" title="Slow down"><i class="fa-solid fa-backward"></i></button>
+                        <button class="vpc-btn vpc-fast" title="Speed up"><i class="fa-solid fa-forward"></i></button>
+                        <button class="vpc-btn vpc-restart" title="Restart"><i class="fa-solid fa-rotate-left"></i></button>
+                        <input type="range" class="vpc-scrub" min="0" max="100" value="0" step="0.1">
+                        <span class="vpc-elapsed">00:00</span>
+                        <span class="vpc-speed">1.00x</span>
+                    </div>
                     <div class="timeline-video-info">
                         <span class="duration-tag">9 seconds</span>
                         <p>Stage 2 &mdash; TTT-only tuning. Cross-segment context begins propagating instrument state across boundaries.</p>
@@ -178,6 +196,15 @@
                     <video autoplay loop muted playsinline>
                         <source src="assets/videos/18s_finalcatsurg_28.mp4" type="video/mp4">
                     </video>
+                    <div class="video-player-controls">
+                        <button class="vpc-btn vpc-play"><i class="fa-solid fa-pause"></i></button>
+                        <button class="vpc-btn vpc-slow" title="Slow down"><i class="fa-solid fa-backward"></i></button>
+                        <button class="vpc-btn vpc-fast" title="Speed up"><i class="fa-solid fa-forward"></i></button>
+                        <button class="vpc-btn vpc-restart" title="Restart"><i class="fa-solid fa-rotate-left"></i></button>
+                        <input type="range" class="vpc-scrub" min="0" max="100" value="0" step="0.1">
+                        <span class="vpc-elapsed">00:00</span>
+                        <span class="vpc-speed">1.00x</span>
+                    </div>
                     <div class="timeline-video-info">
                         <span class="duration-tag">18 seconds</span>
                         <p>Stage 3 &mdash; Full SFT. Best FVD (25.69) and OphCLIP (34.69) among all stages. Multiple phase transitions captured.</p>
@@ -201,9 +228,28 @@
                     <video autoplay loop muted playsinline>
                         <source src="assets/videos/30s_p5.mp4" type="video/mp4">
                     </video>
+                    <div class="video-player-controls">
+                        <button class="vpc-btn vpc-play"><i class="fa-solid fa-pause"></i></button>
+                        <button class="vpc-btn vpc-slow" title="Slow down"><i class="fa-solid fa-backward"></i></button>
+                        <button class="vpc-btn vpc-fast" title="Speed up"><i class="fa-solid fa-forward"></i></button>
+                        <button class="vpc-btn vpc-restart" title="Restart"><i class="fa-solid fa-rotate-left"></i></button>
+                        <input type="range" class="vpc-scrub" min="0" max="100" value="0" step="0.1">
+                        <span class="vpc-elapsed">00:00</span>
+                        <span class="vpc-speed">1.00x</span>
+                    </div>
+                    <p class="phase-bar-label">Surgical Phases</p>
+                    <div class="phase-bar">
+                        <div class="phase-indicator"></div>
+                        <div class="phase-segment phase-incision" data-start="0" style="width: 15%;" title="Incision"><span>Incision</span></div>
+                        <div class="phase-segment phase-viscoel" data-start="15" style="width: 15%;" title="Viscoelastic"><span>Viscoel.</span></div>
+                        <div class="phase-segment phase-rhexis" data-start="30" style="width: 20%;" title="Capsulorhexis"><span>Rhexis</span></div>
+                        <div class="phase-segment phase-hydrodiss" data-start="50" style="width: 15%;" title="Hydrodissection"><span>Hydrodiss.</span></div>
+                        <div class="phase-segment phase-phaco" data-start="65" style="width: 20%;" title="Phacoemulsification"><span>Phaco</span></div>
+                        <div class="phase-segment phase-irrigation" data-start="85" style="width: 15%;" title="Irrigation/Aspiration"><span>I/A</span></div>
+                    </div>
                     <div class="timeline-video-info">
                         <span class="duration-tag">30 seconds</span>
-                        <p>Stage 4 &mdash; TTT-only tuning. Sustained coherence over half a minute with stable temporal smoothness.</p>
+                        <p>Stage 4 &mdash; TTT-only tuning. Sustained coherence over half a minute with stable temporal smoothness. Click any phase segment to jump to that point.</p>
                     </div>
                 </div>
             </div>
@@ -214,9 +260,32 @@
                     <video autoplay loop muted playsinline>
                         <source src="assets/videos/63s_p1.mp4" type="video/mp4">
                     </video>
+                    <div class="video-player-controls">
+                        <button class="vpc-btn vpc-play"><i class="fa-solid fa-pause"></i></button>
+                        <button class="vpc-btn vpc-slow" title="Slow down"><i class="fa-solid fa-backward"></i></button>
+                        <button class="vpc-btn vpc-fast" title="Speed up"><i class="fa-solid fa-forward"></i></button>
+                        <button class="vpc-btn vpc-restart" title="Restart"><i class="fa-solid fa-rotate-left"></i></button>
+                        <input type="range" class="vpc-scrub" min="0" max="100" value="0" step="0.1">
+                        <span class="vpc-elapsed">00:00</span>
+                        <span class="vpc-speed">1.00x</span>
+                    </div>
+                    <p class="phase-bar-label">Surgical Phases</p>
+                    <div class="phase-bar">
+                        <div class="phase-indicator"></div>
+                        <div class="phase-segment phase-idle" data-start="0" style="width: 5%;" title="Idle"><span>Idle</span></div>
+                        <div class="phase-segment phase-incision" data-start="5" style="width: 8%;" title="Incision"><span>Incis.</span></div>
+                        <div class="phase-segment phase-viscoel" data-start="13" style="width: 8%;" title="Viscoelastic"><span>Visc.</span></div>
+                        <div class="phase-segment phase-rhexis" data-start="21" style="width: 12%;" title="Capsulorhexis"><span>Rhexis</span></div>
+                        <div class="phase-segment phase-hydrodiss" data-start="33" style="width: 8%;" title="Hydrodissection"><span>Hydro</span></div>
+                        <div class="phase-segment phase-phaco" data-start="41" style="width: 22%;" title="Phacoemulsification"><span>Phaco</span></div>
+                        <div class="phase-segment phase-irrigation" data-start="63" style="width: 13%;" title="Irrigation/Aspiration"><span>I/A</span></div>
+                        <div class="phase-segment phase-capsule" data-start="76" style="width: 5%;" title="Capsule Polishing"><span>Cap.</span></div>
+                        <div class="phase-segment phase-iol" data-start="81" style="width: 12%;" title="IOL Implantation"><span>IOL</span></div>
+                        <div class="phase-segment phase-tonifying" data-start="93" style="width: 7%;" title="Tonifying/Antibiotics"><span>Toni.</span></div>
+                    </div>
                     <div class="timeline-video-info">
                         <span class="duration-tag">63 seconds</span>
-                        <p>Stage 5 &mdash; Full one-minute generation. Perceptual quality and text alignment remain stable despite the extended duration.</p>
+                        <p>Stage 5 &mdash; Full one-minute generation covering the complete cataract procedure. Click any phase segment to jump directly to that surgical step.</p>
                     </div>
                 </div>
                 <div class="timeline-dot">
@@ -239,19 +308,46 @@
     </div>
 
 
+    <!-- Video Comparison: Side-by-side synchronized player -->
+    <div class="container blog extra-large">
+        <div class="video-comparison">
+            <div class="comp-videos">
+                <div class="comp-video-a">
+                    <span class="comp-label">Ophora</span>
+                    <video muted playsinline>
+                        <source src="assets/videos/3s_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="comp-video-b">
+                    <span class="comp-label">CatStory</span>
+                    <video muted playsinline>
+                        <source src="assets/videos/3s_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="comp-controls">
+                <button class="comp-play"><i class="fa-solid fa-play"></i></button>
+                <input type="range" class="comp-seek" min="0" max="100" value="0" step="0.1">
+                <span class="comp-time">00:00 / 00:00</span>
+            </div>
+        </div>
+        <p class="caption"><b>Side-by-Side Comparison.</b> Synchronized playback of Ophora (left) and CatStory (right) outputs from the same text prompt. Use the shared controls to scrub through both videos simultaneously. <em>Replace the Ophora source with your Ophora output video to complete the comparison.</em></p>
+    </div>
+
+
     <!-- Results Table: Baseline Comparison -->
     <div class="container blog large">
         <div class="table-wrapper">
             <table>
                 <thead class="center">
                     <tr>
-                        <th style="text-align: left;"><b>Method</b></th>
-                        <th><b>FID</b> &darr;</th>
-                        <th><b>FVD</b> &darr;</th>
-                        <th><b>FVMD</b> &darr;</th>
-                        <th><b>Smooth</b> &uarr;</th>
-                        <th><b>Consist</b> &uarr;</th>
-                        <th><b>CLIP</b> &uarr;</th>
+                        <th style="text-align: left;" data-tooltip="The video generation model being compared."><b>Method</b></th>
+                        <th data-tooltip="Fr&eacute;chet Inception Distance. Measures distribution distance between real and generated frames. Lower means more realistic individual frames."><b>FID</b> &darr;</th>
+                        <th data-tooltip="Fr&eacute;chet Video Distance. Extends FID to the temporal domain, measuring how well generated videos match the motion statistics of real videos. Lower is better."><b>FVD</b> &darr;</th>
+                        <th data-tooltip="Fr&eacute;chet Video Motion Distance. Specifically measures motion pattern similarity between real and generated videos. Lower indicates more natural dynamics."><b>FVMD</b> &darr;</th>
+                        <th data-tooltip="VBench Temporal Smoothness. Measures frame-to-frame visual consistency, penalizing flicker and jitter. Higher means smoother transitions."><b>Smooth</b> &uarr;</th>
+                        <th data-tooltip="VBench Temporal Consistency. Evaluates whether semantic content stays coherent over time. Higher means fewer hallucinated or disappearing objects."><b>Consist</b> &uarr;</th>
+                        <th data-tooltip="OphCLIP Score (w=100). Domain-adapted CLIP alignment measuring how well the generated video matches the surgical text prompt. Higher means better text-video fidelity."><b>CLIP</b> &uarr;</th>
                     </tr>
                 </thead>
                 <tbody class="center">
@@ -286,13 +382,13 @@
             <table>
                 <thead class="center">
                     <tr>
-                        <th style="text-align: left;"><b>Configuration</b></th>
-                        <th><b>FID</b> &darr;</th>
-                        <th><b>FVD</b> &darr;</th>
-                        <th><b>FVMD</b> &darr;</th>
-                        <th><b>Smooth</b> &uarr;</th>
-                        <th><b>Consist</b> &uarr;</th>
-                        <th><b>CLIP</b> &uarr;</th>
+                        <th style="text-align: left;" data-tooltip="CatStory model at each curriculum stage duration. Full SFT stages (3s, 18s) tune all weights; other stages tune TTT layers only."><b>Configuration</b></th>
+                        <th data-tooltip="Fr&eacute;chet Inception Distance. Lower is better. Measures per-frame visual realism."><b>FID</b> &darr;</th>
+                        <th data-tooltip="Fr&eacute;chet Video Distance. Lower is better. Captures temporal motion realism."><b>FVD</b> &darr;</th>
+                        <th data-tooltip="Fr&eacute;chet Video Motion Distance. Lower is better. Evaluates motion pattern fidelity."><b>FVMD</b> &darr;</th>
+                        <th data-tooltip="VBench Temporal Smoothness. Higher is better. Penalizes frame-to-frame flicker."><b>Smooth</b> &uarr;</th>
+                        <th data-tooltip="VBench Temporal Consistency. Higher is better. Semantic coherence over time."><b>Consist</b> &uarr;</th>
+                        <th data-tooltip="OphCLIP Score. Higher is better. Text-video alignment in the ophthalmic domain."><b>CLIP</b> &uarr;</th>
                     </tr>
                 </thead>
                 <tbody class="center">
@@ -363,11 +459,11 @@
             <table>
                 <thead class="center">
                     <tr>
-                        <th style="text-align: left;"><b>Probe Training Data</b></th>
-                        <th><b>100%</b></th>
-                        <th><b>10%</b></th>
-                        <th><b>25%</b></th>
-                        <th><b>50%</b></th>
+                        <th style="text-align: left;" data-tooltip="Training data source for the attentive probe classifier on top of the frozen JHU-VPT(JEPA) backbone."><b>Probe Training Data</b></th>
+                        <th data-tooltip="All available real Cataract-1K training labels. The upper bound for annotation budget."><b>100%</b></th>
+                        <th data-tooltip="Only 10% of real labels available. The most data-scarce regime where synthetic augmentation helps most."><b>10%</b></th>
+                        <th data-tooltip="25% of real labels. Synthetic augmentation adds +8.40 percentage points here — the largest single gain."><b>25%</b></th>
+                        <th data-tooltip="50% of real labels. Moderate data regime where synthetic data still provides a meaningful +3.24pp boost."><b>50%</b></th>
                     </tr>
                 </thead>
                 <tbody class="center">
@@ -445,5 +541,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script src="assets/scripts/interactive.js"></script>
 </body>
 </html>

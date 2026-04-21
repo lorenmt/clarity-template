@@ -85,13 +85,14 @@ document.addEventListener('DOMContentLoaded', function () {
             position: absolute;
             z-index: 10000;
             background: #fff;
-            border-radius: 8px;
+            border-radius: 0;
             padding: 14px 16px;
             max-width: 380px;
             min-width: 260px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06);
-            font-size: 14px;
-            line-height: 1.55;
+            font-family: "Charter", Georgia, serif;
+            font-size: inherit;
+            line-height: 1.6;
             color: #353535;
             pointer-events: auto;
             opacity: 0;
@@ -109,8 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         .cite-popup .cite-authors   { font-weight: 600; margin-bottom: 2px; }
         .cite-popup .cite-title     { font-style: italic; margin-bottom: 3px; }
-        .cite-popup .cite-venue     { font-size: 13px; color: #858585; }
-        .cite-popup .cite-venue a   { color: #2563EB; font-size: 12px; text-decoration: none; }
+        .cite-popup .cite-venue     { font-size: 0.85em; color: #858585; }
+        .cite-popup .cite-venue a   { color: #2563EB; font-size: 0.85em; text-decoration: none; }
         .cite-popup .cite-venue a:hover { text-decoration: underline; }
 
         /* ---- Auto-generated bibliography list ---- */
@@ -118,8 +119,9 @@ document.addEventListener('DOMContentLoaded', function () {
             display: flex;
             gap: 12px;
             margin-bottom: 14px;
-            font-size: 15px;
-            line-height: 1.55;
+            font-family: "Charter", Georgia, serif;
+            font-size: inherit;
+            line-height: 1.6;
         }
         .bib-number {
             font-family: 'Poppins', sans-serif;
@@ -140,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .bib-text .bib-authors { font-weight: 600; }
         .bib-text .bib-title   { font-style: italic; }
         .bib-text .bib-venue   { color: #858585; }
-        .bib-text a { color: #2563EB; text-decoration: none; font-size: 13px; }
+        .bib-text a { color: #2563EB; text-decoration: none; font-size: 0.85em; }
         .bib-text a:hover { text-decoration: underline; }
 
         /* ---- Responsive ---- */

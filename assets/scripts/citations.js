@@ -1,5 +1,5 @@
 /**
- *  Hoverable Citations & Footnotes
+ * Clarity Template — Hoverable Citations & Footnotes
  * A self-contained module for Distill-style inline citations and footnotes.
  * 
  * Usage:
@@ -10,13 +10,13 @@
  *   5. Define footnotes in a hidden <div class="footnote-defs"> container.
  *   6. Add an empty <div id="bibliography"><h1>References</h1></div> where you want the reference list.
  *
- * Comment out the script tag(in clarity.html and minimal.html) to disable this feature entirely.
+ * Comment out the script tag to disable this feature entirely.
  */
 
 document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
-    // Inject styles for citations and footnotes: 
+    // ======================== Inject Styles ========================
     var style = document.createElement('style');
     style.textContent = `
         /* ---- Inline citation pill ---- */
@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
             align-items: center;
             justify-content: center;
             font-family: 'Poppins', sans-serif;
-            font-size: 0.6em;
+            font-size: 0.5em;
             font-weight: 600;
             color: #304463;
             background: #E6EBF2;
-            min-width: 17px;
-            height: 17px;
-            padding: 0 4px;
+            width: 15px;
+            height: 15px;
+            padding: 0;
             border-radius: 9px;
             cursor: pointer;
             position: relative;
-            top: -0.4em;
+            top: -0.7em;
             margin: 0 1px;
             transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
             text-decoration: none !important;
@@ -55,17 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
             align-items: center;
             justify-content: center;
             font-family: 'Poppins', sans-serif;
-            font-size: 0.6em;
+            font-size: 0.5em;
             font-weight: 600;
             color: #8B6914;
             background: #FFF8E7;
-            min-width: 17px;
-            height: 17px;
-            padding: 0 4px;
+            width: 15px;
+            height: 15px;
+            padding: 0;
             border-radius: 9px;
             cursor: pointer;
             position: relative;
-            top: -0.4em;
+            top: -0.7em;
             margin: 0 1px;
             transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
             text-decoration: none !important;
@@ -82,59 +82,89 @@ document.addEventListener('DOMContentLoaded', function () {
         /* ---- Popup (shared by citations and footnotes) ---- */
         .cite-popup,
         .footnote-popup {
-            position: absolute;
-            z-index: 10000;
-            background: #fff;
-            border-radius: 0;
-            padding: 14px 16px;
-            max-width: 380px;
-            min-width: 260px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06);
-            font-family: "Charter", Georgia, serif;
-            font-size: inherit;
-            line-height: 1.6;
-            color: #353535;
-            pointer-events: auto;
-            opacity: 0;
-            transform: translateY(6px);
-            transition: opacity 0.18s ease, transform 0.18s ease;
-        }
-        .cite-popup   { border: 1px solid #F0D98C; }
-        .footnote-popup { border: 1px solid #D8D8D3; }
+        position: absolute;
+        z-index: 10000;
+        background: #fff;
+        border-radius: 0;
+        padding: 10px 12px;              /* bigger box */
+        max-width: 320px;                /* wider */
+        min-width: 220px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06);
+        font-family: "Charter", Georgia, serif;
+        line-height: 1.5;
+        color: #353535;
+        pointer-events: auto;
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity 0.18s ease, transform 0.18s ease;
+}
 
-        .cite-popup.visible,
-        .footnote-popup.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+/* ---- Citation popup ---- */
+    .cite-popup {
+    border: 1px solid #F0D98C;
+    font-size: 14px;                 /* MAIN TEXT SIZE */
+}
 
-        .cite-popup .cite-authors   { font-weight: 600; margin-bottom: 2px; }
-        .cite-popup .cite-title     { font-style: italic; margin-bottom: 3px; }
-        .cite-popup .cite-venue     { font-size: 0.85em; color: #858585; }
-        .cite-popup .cite-venue a   { color: #2563EB; font-size: 0.85em; text-decoration: none; }
-        .cite-popup .cite-venue a:hover { text-decoration: underline; }
+/* ---- Footnote popup ---- */
+    .footnote-popup {
+    border: 1px solid #D8D8D3;
+    font-size: 12px;
+}
 
+    .cite-popup.visible,
+    .footnote-popup.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Inner text hierarchy ---- */
+    .cite-popup .cite-authors {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+    .cite-popup .cite-title {
+    font-style: italic;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+    .cite-popup .cite-venue {
+    font-size: 12px;                 /* was 8px → too small */
+    color: #858585;
+}
+
+    .cite-popup .cite-venue a {
+    color: #2563EB;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+    .cite-popup .cite-venue a:hover {
+    text-decoration: underline;
+}
         /* ---- Auto-generated bibliography list ---- */
         .bib-entry {
             display: flex;
-            gap: 12px;
-            margin-bottom: 14px;
+            gap: 10px;
+            margin-bottom: 12px;
             font-family: "Charter", Georgia, serif;
-            font-size: inherit;
-            line-height: 1.6;
+            font-size: 15px;
+            line-height: 1.55;
         }
         .bib-number {
             font-family: 'Poppins', sans-serif;
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 600;
             color: #304463;
             background: #E6EBF2;
-            min-width: 22px;
-            height: 22px;
+            min-width: 20px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 11px;
+            border-radius: 10px;
             flex-shrink: 0;
             margin-top: 3px;
         }
@@ -142,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .bib-text .bib-authors { font-weight: 600; }
         .bib-text .bib-title   { font-style: italic; }
         .bib-text .bib-venue   { color: #858585; }
-        .bib-text a { color: #2563EB; text-decoration: none; font-size: 0.85em; }
+        .bib-text a { color: #2563EB; text-decoration: none; font-size: 13px; }
         .bib-text a:hover { text-decoration: underline; }
 
         /* ---- Responsive ---- */
@@ -156,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.head.appendChild(style);
 
-    //Parse Bibliography:
+    // ======================== Parse Bibliography ========================
     var bibliography = [];
     var bibScript = document.querySelector('script[type="text/bibliography"]');
     if (bibScript) {
@@ -174,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
         bibMap[entry.key] = entry;
     });
 
-    // Auto-number Citations : 
+    // ======================== Auto-Number Citations ========================
     document.querySelectorAll('.cite[data-cite]').forEach(function (el) {
         var key = el.getAttribute('data-cite');
         var entry = bibMap[key];
@@ -186,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    //  Auto-Number Footnotes:
+    // ======================== Auto-Number Footnotes ========================
     document.querySelectorAll('.footnote-ref[data-footnote]').forEach(function (el, i) {
         el.textContent = i + 1;
         el.setAttribute('role', 'doc-noteref');
@@ -194,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
         el.setAttribute('tabindex', '0');
     });
 
-    // Generate Bibliography Section :
+    // ======================== Generate Bibliography Section ========================
     var bibSection = document.getElementById('bibliography');
     if (bibSection && bibliography.length > 0) {
         bibliography.forEach(function (entry) {
@@ -215,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Popup Logic:
+    // ======================== Popup Logic ========================
     var activePopup = null;
     var hoverTimeout = null;
 
@@ -293,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
         positionPopup(popup, el);
     }
 
-    //  Event Binding :
+    // ======================== Event Binding ========================
     var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
     function bindHover(el, showFn) {

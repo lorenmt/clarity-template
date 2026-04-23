@@ -1,0 +1,170 @@
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Task Learning with Attention — Citations Test</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-7.2.0-web/css/all.min.css" rel="stylesheet">
+    <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/citations.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container blog" id="first-content" style="background-color: #E0E4E6;">
+        <div class="blog-title no-cover">
+            <div class="blog-intro">
+                <div>
+                    <h1 class="title">End-to-End Multi-Task Learning with Attention</h1>
+                    <p class="author">
+                        Shikun Liu <sup>1</sup>, Edward Johns <sup>1</sup>, Andrew J. Davison <sup>1</sup>
+                    </p>
+                    <p class="author" style="padding-top: 0px;">
+                        <sup>1</sup> Imperial College London
+                    </p>
+                    <p class="abstract">
+                        We propose a novel multi-task learning architecture that uses attention modules to learn task-specific feature-level attention.
+                        Our approach allows different tasks to share a common feature backbone while dynamically adapting features for each individual task.
+                    </p>
+                    <div class="info">
+                        <div>
+                            <a href="https://arxiv.org/abs/1803.10704" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)"> Paper <i class="fa-regular fa-file-lines"></i></a> &nbsp;&nbsp;
+                            <a href="https://github.com/lorenmt/mtan" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Code <i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>CVPR 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blog main first" id="blog-main">
+        <h1>Introduction</h1>
+        <p class='text'>
+            Multi-task learning<a class="cite" data-cite="caruana1997"></a> aims to improve generalisation by leveraging domain-specific information contained in the training signals of related tasks. Rather than training separate models for each task, a shared representation can be learned that captures common structure across tasks.<span class="footnote-ref" data-footnote="fn1"></span>
+        </p>
+        <p class="text">
+            In the context of deep learning, multi-task architectures broadly fall into two categories: hard parameter sharing<a class="cite" data-cite="caruana1997"></a> and soft parameter sharing<a class="cite" data-cite="ruder2017"></a>. Hard parameter sharing involves sharing the hidden layers between all tasks while keeping separate task-specific output heads.
+        </p>
+        <p class="text">
+            Recent work has shown that naively sharing representations can sometimes hurt performance when tasks compete for capacity in the shared network<a class="cite" data-cite="standley2020"></a>. This phenomenon, known as negative transfer, motivates the need for more sophisticated sharing mechanisms.<span class="footnote-ref" data-footnote="fn2"></span>
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>Related Work</h1>
+        <h2>Multi-Task Architectures</h2>
+        <p class="text">
+            Early multi-task learning methods focused on linear models<a class="cite" data-cite="caruana1997"></a>. With the advent of deep learning, convolutional networks became the dominant architecture for dense prediction tasks. Cross-stitch networks<a class="cite" data-cite="misra2016"></a> introduced learnable linear combinations of features from task-specific networks.
+        </p>
+        <h2>Attention Mechanisms</h2>
+        <p class="text">
+            Attention mechanisms were originally proposed for machine translation<a class="cite" data-cite="bahdanau2015"></a> and have since been adopted across many domains. The Transformer architecture<a class="cite" data-cite="vaswani2017"></a> demonstrated that self-attention alone could replace recurrence entirely. Squeeze-and-Excitation networks<a class="cite" data-cite="hu2018"></a> introduced channel-wise attention for image classification.<span class="footnote-ref" data-footnote="fn3"></span>
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>Method</h1>
+        <p class="text">
+            Our method introduces a Multi-Task Attention Network (MTAN) that consists of a shared feature backbone $\mathcal{F}$ and $K$ task-specific attention modules. Each attention module learns a soft attention mask over the shared features:
+        </p>
+        <p class="text">
+            $$ \mathbf{g}_{k,l} = a_{k,l}(\mathbf{f}_l) \odot \mathbf{f}_l $$
+        </p>
+        <p class="text">
+            This formulation is related to the gating mechanisms in highway networks<a class="cite" data-cite="srivastava2015"></a> and the feature recalibration in SE-Nets<a class="cite" data-cite="hu2018"></a>, but applied specifically to the multi-task setting.<span class="footnote-ref" data-footnote="fn4"></span>
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>Experiments</h1>
+        <p class="text">
+            We evaluate MTAN on NYUv2<a class="cite" data-cite="silberman2012"></a> and CityScapes<a class="cite" data-cite="cordts2016"></a>. For NYUv2, we perform semantic segmentation, depth estimation, and surface normal prediction simultaneously.
+        </p>
+        <table>
+            <thead>
+                <tr><th>Method</th><th>Seg. (mIoU) ↑</th><th>Depth (aErr) ↓</th><th>Normal (mDist) ↓</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Single Task</td><td>36.2</td><td>0.621</td><td>28.4</td></tr>
+                <tr><td>Hard Sharing</td><td>35.1</td><td>0.640</td><td>29.1</td></tr>
+                <tr><td>Cross-Stitch<a class="cite" data-cite="misra2016"></a></td><td>36.5</td><td>0.618</td><td>28.2</td></tr>
+                <tr><td><strong>MTAN (Ours)</strong></td><td><strong>38.9</strong></td><td><strong>0.584</strong></td><td><strong>27.0</strong></td></tr>
+            </tbody>
+        </table>
+        <p class="text">
+            Our method achieves the best performance across all three tasks on NYUv2.<span class="footnote-ref" data-footnote="fn5"></span>
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>Conclusion</h1>
+        <p class="text">
+            We have presented MTAN, a multi-task learning architecture that uses task-specific attention modules to dynamically adapt shared features for each task. Experiments demonstrate consistent improvements over strong baselines.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <div id="bibliography">
+            <h1>References</h1>
+        </div>
+    </div>
+
+    <div class="footnote-defs" style="display:none">
+        <div id="fn1">Multi-task learning acts as a regulariser, reducing the model's tendency to overfit to any single task's noise.</div>
+        <div id="fn2">Negative transfer is particularly severe when tasks have conflicting gradient directions during optimisation.</div>
+        <div id="fn3">Our attention mechanism differs from SE-Nets in that we apply attention <em>across tasks</em> rather than within a single task.</div>
+        <div id="fn4">Soft attention (sigmoid gating) consistently outperformed hard attention in our experiments.</div>
+        <div id="fn5">All experiments were conducted on a single NVIDIA V100 GPU with batch size 2. Training takes approximately 18 hours on NYUv2.</div>
+    </div>
+
+    <script type="text/bibliography">
+    [
+        { "key": "caruana1997", "authors": "Caruana, R.", "title": "Multitask Learning", "venue": "Machine Learning, 28(1), 1997", "url": "https://doi.org/10.1023/A:1007379606734" },
+        { "key": "ruder2017", "authors": "Ruder, S.", "title": "An Overview of Multi-Task Learning in Deep Neural Networks", "venue": "arXiv 2017", "url": "https://arxiv.org/abs/1706.05098" },
+        { "key": "standley2020", "authors": "Standley, T., Zamir, A., Chen, D., et al.", "title": "Which Tasks Should Be Learned Together in Multi-Task Learning?", "venue": "ICML 2020", "url": "https://arxiv.org/abs/1905.07553" },
+        { "key": "misra2016", "authors": "Misra, I., Shrivastava, A., Gupta, A., & Hebert, M.", "title": "Cross-Stitch Networks for Multi-Task Learning", "venue": "CVPR 2016", "url": "https://arxiv.org/abs/1604.03539" },
+        { "key": "bahdanau2015", "authors": "Bahdanau, D., Cho, K., & Bengio, Y.", "title": "Neural Machine Translation by Jointly Learning to Align and Translate", "venue": "ICLR 2015", "url": "https://arxiv.org/abs/1409.0473" },
+        { "key": "vaswani2017", "authors": "Vaswani, A., Shazeer, N., Parmar, N., et al.", "title": "Attention Is All You Need", "venue": "NeurIPS 2017", "url": "https://arxiv.org/abs/1706.03762" },
+        { "key": "hu2018", "authors": "Hu, J., Shen, L., & Sun, G.", "title": "Squeeze-and-Excitation Networks", "venue": "CVPR 2018", "url": "https://arxiv.org/abs/1709.01507" },
+        { "key": "srivastava2015", "authors": "Srivastava, R. K., Greff, K., & Schmidhuber, J.", "title": "Training Very Deep Networks", "venue": "NeurIPS 2015", "url": "https://arxiv.org/abs/1507.06228" },
+        { "key": "silberman2012", "authors": "Silberman, N., Hoiem, D., Kohli, P., & Fergus, R.", "title": "Indoor Segmentation and Support Inference from RGBD Images", "venue": "ECCV 2012", "url": "https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html" },
+        { "key": "cordts2016", "authors": "Cordts, M., Omran, M., Ramos, S., et al.", "title": "The Cityscapes Dataset for Semantic Urban Scene Understanding", "venue": "CVPR 2016", "url": "https://arxiv.org/abs/1604.01685" }
+    ]
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>This website is built on the <a href="https://shikun.io/projects/clarity">Clarity Template</a>, designed by <a href="https://shikun.io/">Shikun Liu</a>.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    </html>
+</body>

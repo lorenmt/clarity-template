@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ======================== Inject Styles ========================
     var style = document.createElement('style');
     style.textContent = `
-        /* ---- Inline citation pill ---- */
+        /*  Inline citation pill  */
         .cite {
             display: inline-flex;
             align-items: center;
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text-decoration: none !important;
         }
 
-        /* ---- Inline footnote pill ---- */
+        /*  Inline footnote pill  */
         .footnote-ref {
             display: inline-flex;
             align-items: center;
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text-decoration: none !important;
         }
 
-        /* ---- Popup (shared by citations and footnotes) ---- */
+        /*  Popup (shared by citations and footnotes)  */
         .cite-popup,
         .footnote-popup {
         position: absolute;
@@ -99,13 +99,18 @@ document.addEventListener('DOMContentLoaded', function () {
         transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
-/* ---- Citation popup ---- */
-    .cite-popup {
+.cite-popup {
     border: 1px solid #F0D98C;
-    font-size: 14px;                 /* MAIN TEXT SIZE */
+
+    font-size: 13px;      
+    max-width: 220px;       
+    min-width: unset;       
+
+    padding: 6px 8px;    
+    line-height: 1.35;    
 }
 
-/* ---- Footnote popup ---- */
+/*  Footnote popup  */
     .footnote-popup {
     border: 1px solid #D8D8D3;
     font-size: 12px;
@@ -117,31 +122,30 @@ document.addEventListener('DOMContentLoaded', function () {
     transform: translateY(0);
 }
 
-/* ---- Inner text hierarchy ---- */
-    .cite-popup .cite-authors {
+.cite-popup .cite-authors {
     font-weight: 600;
-    margin-bottom: 4px;
-    font-size: 14px;
+    margin-bottom: 1px;
+    font-size: 13px;
 }
 
-    .cite-popup .cite-title {
+.cite-popup .cite-title {
     font-style: italic;
-    margin-bottom: 4px;
-    font-size: 14px;
+    margin-bottom: 1px;
+    font-size: 13px;
 }
 
-    .cite-popup .cite-venue {
-    font-size: 12px;                 /* was 8px → too small */
+.cite-popup .cite-venue {
+    font-size: 12px;
     color: #858585;
 }
 
-    .cite-popup .cite-venue a {
+.cite-popup .cite-venue a {
     color: #2563EB;
     font-size: 12px;
     text-decoration: none;
 }
 
-    .cite-popup .cite-venue a:hover {
+.cite-popup .cite-venue a:hover {
     text-decoration: underline;
 }
         /* ---- Auto-generated bibliography list ---- */
